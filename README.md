@@ -15,4 +15,4 @@ News provided by RSS from cointelegraph.com
 
 ### Build with:
 
-Android
+Android Architecture components, MVVM, Data Binding, Hilt, Room, Retrofit, Work Manager, Notifications, ViewPager2, Motion Layout, Splash Screen, SwipeToRefresh
