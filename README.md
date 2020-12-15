@@ -15,4 +15,11 @@ News provided by RSS from cointelegraph.com
 
 ### Build with:
 
-Android Architecture components, MVVM, Data Binding, Hilt, Room, Retrofit, Work Manager, Notifications, ViewPager2, Motion Layout, Splash Screen, SwipeToRefresh
+Android Architecture components, MVVM, Data Binding, Hilt, Room, Retrofit, Work Manager, Notifications, ViewPager2, Motion Layout, Splash Screen, SwipeToRefresh, ShimmerEffect, Day/Night mode and others.<br>
+<br>
+External libraries:<br>
+Glide, MPAndroidChrt, RSS Parser, SpinnerSearchable
+
+### Functionality:
+
+List a
