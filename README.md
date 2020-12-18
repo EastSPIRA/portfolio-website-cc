@@ -22,4 +22,7 @@ Glide, MPAndroidChrt, RSS Parser, SpinnerSearchable
 
 ### Functionality:
 
-List a
+List and wallet:<br>
+<img src="https://s6.gifyu.com/images/coins1e75be092b9ba7ddd.gif"/><br>
+List, themes, currencies:<br>
+<img src="https://s6.gifyu.com/images/coins21cb
