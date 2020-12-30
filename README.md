@@ -25,4 +25,9 @@ Glide, MPAndroidChrt, RSS Parser, SpinnerSearchable
 List and wallet:<br>
 <img src="https://s6.gifyu.com/images/coins1e75be092b9ba7ddd.gif"/><br>
 List, themes, currencies:<br>
-<img src="https://s6.gifyu.com/images/coins21cb
+<img src="https://s6.gifyu.com/images/coins21cbe213c09dfc95f.gif"/><br>
+News and Notification:<br>
+<img src="https://s6.gifyu.com/images/coins3.gif"/>
+<br>
+Screenshots:<br>
+![Screenshoto](https://github.c
