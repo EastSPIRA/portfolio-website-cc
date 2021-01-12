@@ -30,4 +30,4 @@ News and Notification:<br>
 <img src="https://s6.gifyu.com/images/coins3.gif"/>
 <br>
 Screenshots:<br>
-![Screenshoto](https://github.com/pawel-hn/CoinMarketApp/blob/master/screen_list.png) ![Screenshoto](https://github.com/pawel-hn/CoinMarketApp/blob/master/screen_wallet.png) ![Screenshoto](https://gith
+![Screenshoto](https://github.com/pawel-hn/CoinMarketApp/blob/master/screen_list.png) ![Screenshoto](https://github.com/pawel-hn/CoinMarketApp/blob/master/screen_wallet.png) ![Screenshoto](https://github.com/pawel-hn/CoinMarketApp/blob/master/screen_news.png) ![Screenshoto](https://github.com/pawel-hn/CoinMarketApp/blob/master/screen_alarm.png) ![Screenshoto](https://github.com/pawel-hn/CoinM
