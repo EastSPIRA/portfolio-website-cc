@@ -8,4 +8,9 @@ plugins {
 }
 
 android{
-    compileSdkVersion
+    compileSdkVersion(30)
+    buildToolsVersion("30.0.3")
+
+    defaultConfig{
+        applicationId = "pawel.hn.coinmarketapp"
+        minSdkVersion(AppConfig.minSdkVersion)
