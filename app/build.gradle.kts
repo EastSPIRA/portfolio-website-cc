@@ -14,3 +14,8 @@ android{
     defaultConfig{
         applicationId = "pawel.hn.coinmarketapp"
         minSdkVersion(AppConfig.minSdkVersion)
+        targetSdkVersion(AppConfig.targetSdkVersion)
+        versionCode = AppConfig.versionCode
+        versionName = AppConfig.versionName
+
+        te
