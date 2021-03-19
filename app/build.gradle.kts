@@ -18,4 +18,10 @@ android{
         versionCode = AppConfig.versionCode
         versionName = AppConfig.versionName
 
-        te
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = false
+ 
