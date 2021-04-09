@@ -43,4 +43,11 @@ android{
     }
 
     testOptions {
-        unitT
+        unitTests.apply {
+            isReturnDefaultValues = true
+        }
+    }
+
+    packagingOptions {
+        exclude ("**/attach_hotspot_windows.dll")
+        exclude ("META-INF/licens
