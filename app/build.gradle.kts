@@ -63,3 +63,7 @@ dependencies {
     implementation(Dependencies.appCompat)
     implementation(Dependencies.googleMaterial)
     implementation(Dependencies.constraintLayout)
+    implementation(Dependencies.swipeToRefresh)
+    implementation(Dependencies.navigationFragmentKtx)
+    implementation(Dependencies.navigationUiKtx)
+    implementation
