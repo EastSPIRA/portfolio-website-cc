@@ -50,4 +50,13 @@ android{
 
     packagingOptions {
         exclude ("**/attach_hotspot_windows.dll")
-        exclude ("META-INF/licens
+        exclude ("META-INF/licenses/**")
+        exclude( "META-INF/AL2.0")
+        exclude ("META-INF/LGPL2.1")
+    }
+}
+
+dependencies {
+
+    implementation(Dependencies.kotlinCore)
+    implementat
