@@ -59,4 +59,7 @@ android{
 dependencies {
 
     implementation(Dependencies.kotlinCore)
-    implementat
+    implementation(Dependencies.kotlinKtx)
+    implementation(Dependencies.appCompat)
+    implementation(Dependencies.googleMaterial)
+    implementation(Dependencies.constraintLayout)
