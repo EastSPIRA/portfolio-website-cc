@@ -66,4 +66,8 @@ dependencies {
     implementation(Dependencies.swipeToRefresh)
     implementation(Dependencies.navigationFragmentKtx)
     implementation(Dependencies.navigationUiKtx)
-    implementation
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.retrofitGsonConverter)
+    implementation(Dependencies.roomCore)
+    kapt(Dependencies.roomKapt)
+  
