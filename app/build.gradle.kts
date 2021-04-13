@@ -74,3 +74,7 @@ dependencies {
     implementation(Dependencies.liveData)
     implementation(Dependencies.coroutinesCore)
     implementation(Dependencies.coroutinesAndroid)
+    implementation(Dependencies.hiltCore)
+    kapt (Dependencies.hiltKapt)
+    implementation(Dependencies.hiltWorkManager)
+    kapt(Dependencies.hiltKaptAndroidx)
