@@ -70,4 +70,7 @@ dependencies {
     implementation(Dependencies.retrofitGsonConverter)
     implementation(Dependencies.roomCore)
     kapt(Dependencies.roomKapt)
-  
+    implementation(Dependencies.roomKtx)
+    implementation(Dependencies.liveData)
+    implementation(Dependencies.coroutinesCore)
+    implementation(Dependencies.coroutinesAndroid)
