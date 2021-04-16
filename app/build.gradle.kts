@@ -78,3 +78,7 @@ dependencies {
     kapt (Dependencies.hiltKapt)
     implementation(Dependencies.hiltWorkManager)
     kapt(Dependencies.hiltKaptAndroidx)
+    implementation(Dependencies.workManager)
+    implementation(Dependencies.glideCore)
+    kapt(Dependencies.glideKapt)
+    implementation(Dependencies.
