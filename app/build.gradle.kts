@@ -81,4 +81,8 @@ dependencies {
     implementation(Dependencies.workManager)
     implementation(Dependencies.glideCore)
     kapt(Dependencies.glideKapt)
+    implementation(Dependencies.settings)
+    implementation(Dependencies.charts)
+    implementation(Dependencies.rssParser)
+    implementation(Dependencies.shimmer)
     implementation(Dependencies.
