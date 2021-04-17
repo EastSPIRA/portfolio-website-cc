@@ -85,4 +85,8 @@ dependencies {
     implementation(Dependencies.charts)
     implementation(Dependencies.rssParser)
     implementation(Dependencies.shimmer)
-    implementation(Dependencies.
+    implementation(Dependencies.shimmerRecyclerView)
+    implementation(Dependencies.searchableSpinner)
+
+    testImplementation(Dependencies.coroutinesTest)
+    testImplementation(Dependencies.junit
