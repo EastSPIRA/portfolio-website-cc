@@ -93,4 +93,7 @@ dependencies {
     testImplementation(Dependencies.espressoCore)
     testImplementation(Dependencies.googleTruth)
     testImplementation(Dependencies.coreTesting)
-    testImplementati
+    testImplementation(Dependencies.mockk)
+    androidTestImplementation(Dependencies.coroutinesTest)
+    androidTestImplementation(Dependencies.junitTest)
+    androidTestImplementation(Depend
