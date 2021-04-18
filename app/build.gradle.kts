@@ -89,4 +89,8 @@ dependencies {
     implementation(Dependencies.searchableSpinner)
 
     testImplementation(Dependencies.coroutinesTest)
-    testImplementation(Dependencies.junit
+    testImplementation(Dependencies.junitTest)
+    testImplementation(Dependencies.espressoCore)
+    testImplementation(Dependencies.googleTruth)
+    testImplementation(Dependencies.coreTesting)
+    testImplementati
