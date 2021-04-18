@@ -96,4 +96,7 @@ dependencies {
     testImplementation(Dependencies.mockk)
     androidTestImplementation(Dependencies.coroutinesTest)
     androidTestImplementation(Dependencies.junitTest)
-    androidTestImplementation(Depend
+    androidTestImplementation(Dependencies.espressoCore)
+    androidTestImplementation(Dependencies.googleTruth)
+    androidTestImplementation(Dependencies.coreTesting)
+    androidTestImpl
