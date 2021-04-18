@@ -99,4 +99,6 @@ dependencies {
     androidTestImplementation(Dependencies.espressoCore)
     androidTestImplementation(Dependencies.googleTruth)
     androidTestImplementation(Dependencies.coreTesting)
-    androidTestImpl
+    androidTestImplementation(Dependencies.workManagerTesting)
+
+}
