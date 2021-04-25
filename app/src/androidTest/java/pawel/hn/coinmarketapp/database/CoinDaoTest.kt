@@ -10,4 +10,13 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.After
 import org.junit.Before
-import org.junit.Rul
+import org.junit.Rule
+import org.junit.Test
+import org.junit.runner.RunWith
+
+@ExperimentalCoroutinesApi
+@RunWith(AndroidJUnit4::class)
+@SmallTest
+class CoinDaoTest {
+
+   
