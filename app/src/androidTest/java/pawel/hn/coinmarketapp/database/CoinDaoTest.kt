@@ -31,3 +31,14 @@ class CoinDaoTest {
         database = Room.inMemoryDatabaseBuilder(
             ApplicationProvider.getApplicationContext(),
             CoinDatabase::class.java)
+            .allowMainThreadQueries()
+            .build()
+
+        coinDao = database.coinDao
+    }
+
+    @After
+    fun tearDown() = database.close()
+
+    @Test
+    fun insertCoin_returnsIn
