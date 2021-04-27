@@ -19,4 +19,11 @@ import org.junit.runner.RunWith
 @SmallTest
 class CoinDaoTest {
 
-   
+    @get:Rule
+    var instantTaskExecutorRule = InstantTaskExecutorRule()
+
+    private lateinit var database: CoinDatabase
+    private lateinit var coinDao: CoinDao
+
+
+ 
