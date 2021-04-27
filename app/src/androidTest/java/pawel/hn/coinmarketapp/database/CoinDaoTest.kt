@@ -26,4 +26,8 @@ class CoinDaoTest {
     private lateinit var coinDao: CoinDao
 
 
- 
+    @Before
+    fun setup() {
+        database = Room.inMemoryDatabaseBuilder(
+            ApplicationProvider.getApplicationContext(),
+            CoinDatabase::class.java)
