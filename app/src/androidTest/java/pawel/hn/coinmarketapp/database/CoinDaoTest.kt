@@ -45,4 +45,10 @@ class CoinDaoTest {
         val testCoin = Coin(1, "testCoin",
             "ct", false, 1.0, 0.02, 0.1, 1)
         coinDao.insert(testCoin)
-        val testList
+        val testList = coinDao.getAllCoins("").getOrAwaitValue()
+
+        assertThat(testList).contains(testCoin)
+    }
+
+    @Test
+    fun getCheckedCoins_returnsOnlyFav
