@@ -51,4 +51,7 @@ class CoinDaoTest {
     }
 
     @Test
-    fun getCheckedCoins_returnsOnlyFav
+    fun getCheckedCoins_returnsOnlyFavourite() = runBlockingTest {
+        val testCoin1 = Coin(1, "testCoin",
+            "ct", false, 1.0, 0.02, 0.1, 1)
+        val testCoin2 = 
