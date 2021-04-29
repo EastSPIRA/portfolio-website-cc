@@ -58,4 +58,6 @@ class CoinDaoTest {
             "ct", true, 1.0, 0.02, 0.1, 1)
         val testCoin3 = Coin(3, "testCoin",
             "ct", true, 1.0, 0.02, 0.1, 1)
-        val co
+        val coinTestListInput = listOf(testCoin1, testCoin2, testCoin3)
+        coinDao.insertAll(coinTestListInput)
+        val coinTestListOutput = coinDao.getCheckedCoins("").g
