@@ -60,4 +60,9 @@ class CoinDaoTest {
             "ct", true, 1.0, 0.02, 0.1, 1)
         val coinTestListInput = listOf(testCoin1, testCoin2, testCoin3)
         coinDao.insertAll(coinTestListInput)
-        val coinTestListOutput = coinDao.getCheckedCoins("").g
+        val coinTestListOutput = coinDao.getCheckedCoins("").getOrAwaitValue()
+
+        assertThat(coinTestListOutput).containsExactly(testCoin2, testCoin3)
+    }
+
+}
