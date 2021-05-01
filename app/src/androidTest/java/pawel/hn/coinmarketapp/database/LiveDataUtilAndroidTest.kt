@@ -34,4 +34,12 @@ fun <T> LiveData<T>.getOrAwaitValue(
         afterObserve.invoke()
 
         // Don't wait indefinitely if the LiveData is not set.
-        if (!latch.await(time, timeUnit
+        if (!latch.await(time, timeUnit)) {
+            throw TimeoutException("LiveData value was never set.")
+        }
+
+    } finally {
+        this.removeObserver(observer)
+    }
+
+    @Sup
