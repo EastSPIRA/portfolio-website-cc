@@ -42,4 +42,6 @@ fun <T> LiveData<T>.getOrAwaitValue(
         this.removeObserver(observer)
     }
 
-    @Sup
+    @Suppress("UNCHECKED_CAST")
+    return data as T
+}
