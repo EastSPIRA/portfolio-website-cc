@@ -11,4 +11,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.Na
+import androidx.navigation.ui.NavigationUI
+import dagger.hilt.android.AndroidEntryPoint
+import pawel.hn.coinmarketapp.R
+import pawel.hn.coinmarketapp.databinding.ActivityMai
