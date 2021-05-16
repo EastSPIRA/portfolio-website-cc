@@ -21,3 +21,7 @@ import pawel.hn.coinmarketapp.util.CHANNEL_NAME
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var drawerLayout: DrawerLayout
+    private lateinit var appBarConfiguration: AppBarConfiguration
+
+    override fun onCreate(savedInstanceState: Bundle?) {
