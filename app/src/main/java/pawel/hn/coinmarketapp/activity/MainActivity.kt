@@ -14,4 +14,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import dagger.hilt.android.AndroidEntryPoint
 import pawel.hn.coinmarketapp.R
-import pawel.hn.coinmarketapp.databinding.ActivityMai
+import pawel.hn.coinmarketapp.databinding.ActivityMainBinding
+import pawel.hn.coinmarketapp.util.CHANNEL_ID
+import pawel.hn.coinmarketapp.util.CHANNEL_NAME
+
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity() {
+
