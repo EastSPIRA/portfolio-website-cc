@@ -37,4 +37,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.walletsFragment,
                 R.id.newsFragment,
                 R.id.priceNotifyFragment)
-            
+            .setOpenableLayout(drawerLayout)
+            .build()
+
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_cont
