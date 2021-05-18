@@ -33,4 +33,8 @@ class MainActivity : AppCompatActivity() {
         drawerLayout = binding.drawerLayout
 
         appBarConfiguration = AppBarConfiguration
-            .Builder(R.i
+            .Builder(R.id.coinsFragment,
+                R.id.walletsFragment,
+                R.id.newsFragment,
+                R.id.priceNotifyFragment)
+            
