@@ -28,4 +28,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_MyTheme)
         val binding = DataBindingUtil
-            .setContentView<ActivityMainBi
+            .setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+
+        drawerLayout = binding.drawerLayout
+
+        appBarConfiguration = AppBarConfiguration
+            .Builder(R.i
