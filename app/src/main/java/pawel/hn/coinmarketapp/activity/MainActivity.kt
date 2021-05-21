@@ -45,3 +45,10 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration)
+        NavigationUI.setupWithNavController(binding.navView, navController)
+
+
+        createChannelNotification()
+    }
+
+    override fun onSupportNavigateUp(): B
