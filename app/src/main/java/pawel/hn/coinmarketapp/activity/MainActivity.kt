@@ -63,3 +63,8 @@ class MainActivity : AppCompatActivity() {
                 CHANNEL_ID, CHANNEL_NAME,
                 NotificationManager.IMPORTANCE_DEFAULT
             ).apply {
+                description = "Price notification"
+            }
+
+            val manager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+      
