@@ -11,4 +11,6 @@ import java.util.*
 
 class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
-    override fun onCreateViewH
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
+        val binding = ItemNewsBinding.inflate(
+            LayoutInflater.from(parent.context), par
