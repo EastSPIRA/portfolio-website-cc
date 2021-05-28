@@ -9,4 +9,6 @@ import pawel.hn.coinmarketapp.databinding.ItemNewsBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
-cla
+class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
+
+    override fun onCreateViewH
