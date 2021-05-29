@@ -13,4 +13,10 @@ class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : Recy
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         val binding = ItemNewsBinding.inflate(
-            LayoutInflater.from(parent.context), par
+            LayoutInflater.from(parent.context), parent,false
+        )
+        return NewsViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
+        holder.bin
