@@ -29,4 +29,6 @@ class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : Recy
         fun bind(article: Article) {
 
             val dateSourceString = article.pubDate
-            val sourceSdf
+            val sourceSdf = SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z", Locale.ENGLISH)
+            if (dateSourceString != null) {
+                val date = sour
