@@ -19,4 +19,9 @@ class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : Recy
     }
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
-        holder.bin
+        holder.bind(list[position])
+    }
+
+    override fun getItemCount(): Int = list.size
+
+    inner class NewsViewHolder(private val binding: ItemNewsBinding) : Recycle
