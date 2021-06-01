@@ -24,4 +24,9 @@ class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : Recy
 
     override fun getItemCount(): Int = list.size
 
-    inner class NewsViewHolder(private val binding: ItemNewsBinding) : Recycle
+    inner class NewsViewHolder(private val binding: ItemNewsBinding) : RecyclerView.ViewHolder(binding.root) {
+
+        fun bind(article: Article) {
+
+            val dateSourceString = article.pubDate
+            val sourceSdf
