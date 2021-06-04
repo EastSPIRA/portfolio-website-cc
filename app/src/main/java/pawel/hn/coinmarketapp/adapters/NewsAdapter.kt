@@ -31,4 +31,7 @@ class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : Recy
             val dateSourceString = article.pubDate
             val sourceSdf = SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z", Locale.ENGLISH)
             if (dateSourceString != null) {
-                val date = sour
+                val date = sourceSdf.parse(dateSourceString)
+                if ( date != null) {
+                    val textViewDateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
+                
