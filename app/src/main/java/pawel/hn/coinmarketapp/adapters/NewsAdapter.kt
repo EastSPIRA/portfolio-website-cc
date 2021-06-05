@@ -34,4 +34,7 @@ class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : Recy
                 val date = sourceSdf.parse(dateSourceString)
                 if ( date != null) {
                     val textViewDateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
-                
+                    binding.textViewNewsDate.text = textViewDateFormat.format(date)
+                }
+            }
+            binding.textViewNewsTitle.tex
