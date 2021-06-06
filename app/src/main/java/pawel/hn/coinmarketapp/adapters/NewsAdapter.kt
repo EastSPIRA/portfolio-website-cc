@@ -37,4 +37,6 @@ class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : Recy
                     binding.textViewNewsDate.text = textViewDateFormat.format(date)
                 }
             }
-            binding.textViewNewsTitle.tex
+            binding.textViewNewsTitle.text = article.title
+            binding.textViewNewsCategories.text = article.categories.joinToString(limit = 5)
+            itemView.setOnClickListener { onCLick(article.lin
