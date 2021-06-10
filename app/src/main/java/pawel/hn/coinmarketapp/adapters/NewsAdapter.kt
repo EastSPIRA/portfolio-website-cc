@@ -39,4 +39,13 @@ class NewsAdapter(val list: List<Article>, val onCLick: (String) -> Unit) : Recy
             }
             binding.textViewNewsTitle.text = article.title
             binding.textViewNewsCategories.text = article.categories.joinToString(limit = 5)
-            itemView.setOnClickListener { onCLick(article.lin
+            itemView.setOnClickListener { onCLick(article.link!!) }
+
+            Glide.with(itemView)
+                .load(article.image)
+                .centerCrop()
+                .into(binding.imageViewNews)
+
+        }
+    }
+}
