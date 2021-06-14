@@ -15,4 +15,9 @@ interface CoinApi {
     @GET("v1/cryptocurrency/listings/latest")
     suspend fun getCoinsFromNetwork(
             @Query("start") start: Int,
-            @Q
+            @Query("limit") limit: Int,
+            @Query("convert") convert: String
+     ): Response<ApiResponseArray>
+
+
+    @Headers("$API_HEADER $API_KEY", "Accept: ap
