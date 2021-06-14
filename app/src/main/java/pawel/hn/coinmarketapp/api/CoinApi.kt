@@ -20,4 +20,11 @@ interface CoinApi {
      ): Response<ApiResponseArray>
 
 
-    @Headers("$API_HEADER $API_KEY", "Accept: ap
+    @Headers("$API_HEADER $API_KEY", "Accept: application/json")
+    @GET("v1/cryptocurrency/quotes/latest")
+    suspend fun getLatestSingleQuote(
+        @Query("id") id: String
+    ): Response<ApiResponse>
+
+
+}
