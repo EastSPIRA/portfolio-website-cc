@@ -15,4 +15,8 @@ class CoinsData @Inject constructor(private val coinDao: CoinDao) {
     val coinsAll = coinDao.getAllCoins("")
     val coinsFavourite = coinDao.getCheckedCoins("")
 
-    suspend fun insertCoins(coins: List<Coin>)
+    suspend fun insertCoins(coins: List<Coin>) = coinDao.insertAll(coins)
+
+    suspend fun update(coin: Coin, isChecked: Boolean) {
+        coinDao.update(coin.copy(favourite = isChecked))
+  
