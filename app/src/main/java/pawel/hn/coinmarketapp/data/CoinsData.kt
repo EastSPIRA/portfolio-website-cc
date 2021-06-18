@@ -9,4 +9,5 @@ import javax.inject.Inject
 
 class CoinsData @Inject constructor(private val coinDao: CoinDao) {
 
-    fun g
+    fun getCoinsList(searchQuery: String, favourites: Boolean): LiveData<List<Coin>>
+    = if (favourites) coinDao.getCheckedCoins(searchQuery) 
