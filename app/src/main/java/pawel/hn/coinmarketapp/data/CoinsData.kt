@@ -29,4 +29,10 @@ class CoinsData @Inject constructor(private val coinDao: CoinDao) {
             }
             oldCoin?.let { _oldCoin ->
                 update(newList[i], _oldCoin.favourite)
-     
+            }
+        }
+    }
+
+    /**
+     * Notifications are inserted into database and observed with livedata, so app knows when to
+     * be ready to send a notifica
