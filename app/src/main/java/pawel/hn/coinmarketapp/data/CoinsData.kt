@@ -19,4 +19,9 @@ class CoinsData @Inject constructor(private val coinDao: CoinDao) {
 
     suspend fun update(coin: Coin, isChecked: Boolean) {
         coinDao.update(coin.copy(favourite = isChecked))
-  
+    }
+
+    suspend fun updateCoins(newList: List<Coin>) {
+        val oldList = coinsAll.value!!
+        for (i in 0..newList.lastIndex) {
+            val oldCoin = oldList.find 
