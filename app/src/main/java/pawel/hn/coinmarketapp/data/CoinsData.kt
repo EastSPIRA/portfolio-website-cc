@@ -35,4 +35,9 @@ class CoinsData @Inject constructor(private val coinDao: CoinDao) {
 
     /**
      * Notifications are inserted into database and observed with livedata, so app knows when to
-     * be ready to send a notifica
+     * be ready to send a notification.
+     */
+    val notifications = coinDao.getNotifications()
+
+    suspend fun insertNotifications(notifications: Notifications) {
+        coinDao.ins
