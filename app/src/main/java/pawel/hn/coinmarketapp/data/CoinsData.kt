@@ -24,4 +24,9 @@ class CoinsData @Inject constructor(private val coinDao: CoinDao) {
     suspend fun updateCoins(newList: List<Coin>) {
         val oldList = coinsAll.value!!
         for (i in 0..newList.lastIndex) {
-            val oldCoin = oldList.find 
+            val oldCoin = oldList.find {
+                it.coinId == newList[i].coinId
+            }
+            oldCoin?.let { _oldCoin ->
+                update(newList[i], _oldCoin.favourite)
+     
