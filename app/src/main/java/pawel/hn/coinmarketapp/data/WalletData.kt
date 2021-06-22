@@ -10,4 +10,8 @@ class WalletData @Inject constructor(private val walletDao: WalletDao) {
 
     val wallet = walletDao.getWallet()
 
-    suspend fun addToWallet(newCoin:
+    suspend fun addToWallet(newCoin: Wallet) {
+        val oldCoin =
+            wallet.value?.find { it.coinId == newCoin.coinId && it.walletNo == newCoin.walletNo }
+
+        if (ol
