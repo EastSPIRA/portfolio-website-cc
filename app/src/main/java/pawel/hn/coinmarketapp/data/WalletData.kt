@@ -14,4 +14,7 @@ class WalletData @Inject constructor(private val walletDao: WalletDao) {
         val oldCoin =
             wallet.value?.find { it.coinId == newCoin.coinId && it.walletNo == newCoin.walletNo }
 
-        if (ol
+        if (oldCoin != null) {
+            val newVolume = newCoin.volume + oldCoin.volume
+            updateWallet(
+                oldCoin.copy(volume = newVolume),
