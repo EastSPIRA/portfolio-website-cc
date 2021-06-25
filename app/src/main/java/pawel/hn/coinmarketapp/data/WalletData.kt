@@ -37,4 +37,14 @@ class WalletData @Inject constructor(private val walletDao: WalletDao) {
         val newTotal = coin.volume * newPrice
 
         walletDao.updateWallet(
-            c
+            coin.copy(
+                price = newPrice, total = newTotal
+            )
+        )
+    }
+
+
+    fun createWalletCoin(
+        coinName: String,
+        coinVolume: Double,
+        walletNo
