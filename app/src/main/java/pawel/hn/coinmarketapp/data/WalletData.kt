@@ -31,4 +31,10 @@ class WalletData @Inject constructor(private val walletDao: WalletDao) {
     }
     suspend fun deleteAllFromWallets() {
         walletDao.deleteAllFromWallets()
- 
+    }
+
+    suspend fun updateWallet(coin: Wallet, newPrice: Double) {
+        val newTotal = coin.volume * newPrice
+
+        walletDao.updateWallet(
+            c
