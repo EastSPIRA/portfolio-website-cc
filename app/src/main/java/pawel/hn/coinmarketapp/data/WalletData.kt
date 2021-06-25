@@ -25,4 +25,10 @@ class WalletData @Inject constructor(private val walletDao: WalletDao) {
         }
     }
 
-    suspend fun delete
+    suspend fun deleteFromWallet(coin: Wallet) {
+        walletDao.deleteFromWallet(coin)
+
+    }
+    suspend fun deleteAllFromWallets() {
+        walletDao.deleteAllFromWallets()
+ 
