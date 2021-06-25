@@ -18,3 +18,11 @@ class WalletData @Inject constructor(private val walletDao: WalletDao) {
             val newVolume = newCoin.volume + oldCoin.volume
             updateWallet(
                 oldCoin.copy(volume = newVolume),
+                oldCoin.price
+            )
+        } else {
+            walletDao.insertIntoWallet(newCoin)
+        }
+    }
+
+    suspend fun delete
