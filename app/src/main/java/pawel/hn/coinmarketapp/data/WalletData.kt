@@ -47,4 +47,8 @@ class WalletData @Inject constructor(private val walletDao: WalletDao) {
     fun createWalletCoin(
         coinName: String,
         coinVolume: Double,
-        walletNo
+        walletNo: Int,
+        coins: List<Coin>
+    ): Wallet {
+        val price = coins.find { it.name == coinName }?.price ?: 0.0
+        val coi
