@@ -60,4 +60,11 @@ class WalletData @Inject constructor(private val walletDao: WalletDao) {
             name = coinName,
             symbol = symbol,
             volume = coinVolume,
-       
+            price = price,
+            total = total,
+            walletNo = walletNo
+        )
+    }
+
+
+}
