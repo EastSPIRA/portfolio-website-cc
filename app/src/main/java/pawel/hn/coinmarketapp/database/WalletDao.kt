@@ -19,4 +19,7 @@ interface WalletDao {
     @Query("DELETE FROM wallet_table")
     suspend fun deleteAllFromWallets()
 
-    @Update(onConflict = OnConflictSt
+    @Update(onConflict = OnConflictStrategy.REPLACE, entity = Wallet::class)
+    suspend fun updateWallet(coin: Wallet)
+
+}
