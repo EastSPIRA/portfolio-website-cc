@@ -14,3 +14,9 @@ interface WalletDao {
     fun getWallet(): LiveData<List<Wallet>>
 
     @Delete(entity = Wallet::class)
+    suspend fun deleteFromWallet(coin: Wallet)
+
+    @Query("DELETE FROM wallet_table")
+    suspend fun deleteAllFromWallets()
+
+    @Update(onConflict = OnConflictSt
