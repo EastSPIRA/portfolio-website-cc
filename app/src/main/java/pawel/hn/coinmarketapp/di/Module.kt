@@ -13,4 +13,8 @@ import pawel.hn.coinmarketapp.data.WalletData
 import pawel.hn.coinmarketapp.database.CoinDao
 import pawel.hn.coinmarketapp.database.CoinDatabase
 import pawel.hn.coinmarketapp.database.WalletDao
-import pawel.hn
+import pawel.hn.coinmarketapp.repository.CoinsRepository
+import pawel.hn.coinmarketapp.util.BASE_URL_COINS
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import javax.inje
