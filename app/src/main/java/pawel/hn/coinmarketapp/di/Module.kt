@@ -9,4 +9,8 @@ import dagger.hilt.components.SingletonComponent
 import pawel.hn.coinmarketapp.api.CoinApi
 import pawel.hn.coinmarketapp.data.CoinsData
 import pawel.hn.coinmarketapp.data.RemoteData
-import pawel.hn.coinmarketapp.data.W
+import pawel.hn.coinmarketapp.data.WalletData
+import pawel.hn.coinmarketapp.database.CoinDao
+import pawel.hn.coinmarketapp.database.CoinDatabase
+import pawel.hn.coinmarketapp.database.WalletDao
+import pawel.hn
