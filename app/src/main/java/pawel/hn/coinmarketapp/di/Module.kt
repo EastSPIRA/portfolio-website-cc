@@ -31,4 +31,8 @@ object Module {
 
     @Provides
     @Singleton
-    fun provideCoinApi(retrofi
+    fun provideCoinApi(retrofit: Retrofit): CoinApi = retrofit.create(CoinApi::class.java)
+
+    @Provides
+    @Singleton
+    fun provideDatabase(@ApplicationContext context: Context): Co
