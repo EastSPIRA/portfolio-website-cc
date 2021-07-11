@@ -35,4 +35,9 @@ object Module {
 
     @Provides
     @Singleton
-    fun provideDatabase(@ApplicationContext context: Context): Co
+    fun provideDatabase(@ApplicationContext context: Context): CoinDatabase =
+        CoinDatabase.getDataBase(context)
+
+    @Provides
+    @Singleton
+    fun provideRepository(coinsData: CoinsData, walletData: WalletData, 
