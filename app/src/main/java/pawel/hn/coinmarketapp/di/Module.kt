@@ -17,4 +17,12 @@ import pawel.hn.coinmarketapp.repository.CoinsRepository
 import pawel.hn.coinmarketapp.util.BASE_URL_COINS
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.inje
+import javax.inject.Singleton
+
+@Module
+@InstallIn(SingletonComponent::class)
+object Module {
+
+    @Provides
+    fun provideRetrofit(): Retrofit = Retrofit.Builder()
+        .baseUrl(BA
