@@ -25,4 +25,10 @@ object Module {
 
     @Provides
     fun provideRetrofit(): Retrofit = Retrofit.Builder()
-        .baseUrl(BA
+        .baseUrl(BASE_URL_COINS)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
+    @Provides
+    @Singleton
+    fun provideCoinApi(retrofi
