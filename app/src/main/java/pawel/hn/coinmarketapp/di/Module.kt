@@ -45,4 +45,10 @@ object Module {
 
     @Provides
     @Singleton
-    fun provideCoinDao(database: CoinDatabase): CoinDao = databas
+    fun provideCoinDao(database: CoinDatabase): CoinDao = database.coinDao
+
+    @Provides
+    @Singleton
+    fun provideWalletDao(database: CoinDatabase): WalletDao = database.walletDao
+
+}
