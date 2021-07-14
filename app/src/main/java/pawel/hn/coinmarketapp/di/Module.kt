@@ -40,4 +40,9 @@ object Module {
 
     @Provides
     @Singleton
-    fun provideRepository(coinsData: CoinsData, walletData: WalletData, 
+    fun provideRepository(coinsData: CoinsData, walletData: WalletData, remoteData: RemoteData) =
+        CoinsRepository(coinsData, walletData, remoteData)
+
+    @Provides
+    @Singleton
+    fun provideCoinDao(database: CoinDatabase): CoinDao = databas
