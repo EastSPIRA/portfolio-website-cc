@@ -14,4 +14,9 @@ import pawel.hn.coinmarketapp.R
 import pawel.hn.coinmarketapp.databinding.FragmentDialogAddEditBinding
 import pawel.hn.coinmarketapp.viewmodels.AddCoinViewModel
 
-@Andro
+@AndroidEntryPoint
+class AddCoinFragmentDialog : DialogFragment() {
+
+
+    private lateinit var binding: FragmentDialogAddEditBinding
+    private var
