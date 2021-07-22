@@ -19,4 +19,10 @@ class AddCoinFragmentDialog : DialogFragment() {
 
 
     private lateinit var binding: FragmentDialogAddEditBinding
-    private var
+    private var coinName: String = ""
+    private var coinVolume: Double = 0.0
+
+    private val viewModel: AddCoinViewModel by viewModels()
+
+    override fun onCreateView(
+        infl
