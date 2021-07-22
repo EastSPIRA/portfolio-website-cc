@@ -9,4 +9,9 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.viewModels
-import dagger.hilt.android.AndroidEntryPo
+import dagger.hilt.android.AndroidEntryPoint
+import pawel.hn.coinmarketapp.R
+import pawel.hn.coinmarketapp.databinding.FragmentDialogAddEditBinding
+import pawel.hn.coinmarketapp.viewmodels.AddCoinViewModel
+
+@Andro
