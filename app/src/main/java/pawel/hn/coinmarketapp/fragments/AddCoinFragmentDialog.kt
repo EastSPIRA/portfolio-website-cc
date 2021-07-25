@@ -25,4 +25,6 @@ class AddCoinFragmentDialog : DialogFragment() {
     private val viewModel: AddCoinViewModel by viewModels()
 
     override fun onCreateView(
-        infl
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentDialogAddEditBinding.inflate(inflater, contai
