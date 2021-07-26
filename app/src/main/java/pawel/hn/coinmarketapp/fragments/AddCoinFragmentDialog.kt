@@ -30,4 +30,7 @@ class AddCoinFragmentDialog : DialogFragment() {
         binding = FragmentDialogAddEditBinding.inflate(inflater, container, false)
         dialog!!.window!!.setBackgroundDrawableResource(R.drawable.dialog_round_corners)
 
-        val walletNo = AddCoinFragmentDialogArgs.fromBundle(requireArgu
+        val walletNo = AddCoinFragmentDialogArgs.fromBundle(requireArguments()).walletNumber
+
+        val spinnerAdapter = ArrayAdapter(
+            requireContext(), android.R.layout.simple_spinner_dropd
