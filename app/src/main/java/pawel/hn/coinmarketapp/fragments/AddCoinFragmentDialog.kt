@@ -27,4 +27,7 @@ class AddCoinFragmentDialog : DialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-        binding = FragmentDialogAddEditBinding.inflate(inflater, contai
+        binding = FragmentDialogAddEditBinding.inflate(inflater, container, false)
+        dialog!!.window!!.setBackgroundDrawableResource(R.drawable.dialog_round_corners)
+
+        val walletNo = AddCoinFragmentDialogArgs.fromBundle(requireArgu
