@@ -33,4 +33,10 @@ class AddCoinFragmentDialog : DialogFragment() {
         val walletNo = AddCoinFragmentDialogArgs.fromBundle(requireArguments()).walletNumber
 
         val spinnerAdapter = ArrayAdapter(
-            requireContext(), android.R.layout.simple_spinner_dropd
+            requireContext(), android.R.layout.simple_spinner_dropdown_item,
+            viewModel.coinsNamesList()
+        ).apply { setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
+
+        binding.apply {
+
+       
