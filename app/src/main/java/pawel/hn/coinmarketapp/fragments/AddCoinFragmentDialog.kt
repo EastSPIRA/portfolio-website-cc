@@ -53,4 +53,5 @@ class AddCoinFragmentDialog : DialogFragment() {
                     Toast.makeText(requireContext(), R.string.dialog_error, Toast.LENGTH_SHORT)
                         .show()
                 } else {
-     
+                    coinVolume = editTextVolume.text.toString().toDouble()
+                    val coinWallet = viewModel.create
