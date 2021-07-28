@@ -44,4 +44,9 @@ class AddCoinFragmentDialog : DialogFragment() {
                 onItemSelectedListener = spinnerCoinSelected
             }
 
-         
+            btnDialogCancel.setOnClickListener {
+                dismiss()
+            }
+
+            btnDialogSave.setOnClickListener {
+                if (editTextVolume.text!!.isB
