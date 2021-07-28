@@ -39,4 +39,9 @@ class AddCoinFragmentDialog : DialogFragment() {
 
         binding.apply {
 
-       
+            spinnerDialogSearch.apply {
+                adapter = spinnerAdapter
+                onItemSelectedListener = spinnerCoinSelected
+            }
+
+         
