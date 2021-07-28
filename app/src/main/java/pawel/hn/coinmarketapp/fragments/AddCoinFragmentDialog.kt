@@ -49,4 +49,8 @@ class AddCoinFragmentDialog : DialogFragment() {
             }
 
             btnDialogSave.setOnClickListener {
-                if (editTextVolume.text!!.isB
+                if (editTextVolume.text!!.isBlank()) {
+                    Toast.makeText(requireContext(), R.string.dialog_error, Toast.LENGTH_SHORT)
+                        .show()
+                } else {
+     
