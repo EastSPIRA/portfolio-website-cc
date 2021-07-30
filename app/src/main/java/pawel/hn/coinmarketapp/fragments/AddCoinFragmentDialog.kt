@@ -54,4 +54,10 @@ class AddCoinFragmentDialog : DialogFragment() {
                         .show()
                 } else {
                     coinVolume = editTextVolume.text.toString().toDouble()
-                    val coinWallet = viewModel.create
+                    val coinWallet = viewModel.createWalletCoin(coinName, coinVolume, walletNo)
+                    viewModel.addToWallet(coinWallet)
+                    dismiss()
+                }
+            }
+        }
+ 
