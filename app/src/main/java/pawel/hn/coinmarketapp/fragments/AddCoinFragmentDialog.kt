@@ -60,4 +60,9 @@ class AddCoinFragmentDialog : DialogFragment() {
                 }
             }
         }
- 
+        return binding.root
+    }
+
+
+    private val spinnerCoinSelected = object : AdapterView.OnItemSelectedListener {
+        override fun onItemSelected(parent: Adap
