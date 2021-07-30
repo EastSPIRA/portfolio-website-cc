@@ -65,4 +65,7 @@ class AddCoinFragmentDialog : DialogFragment() {
 
 
     private val spinnerCoinSelected = object : AdapterView.OnItemSelectedListener {
-        override fun onItemSelected(parent: Adap
+        override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+            coinName = parent?.getItemAtPosition(position).toString()
+        }
+        override fun onNo
