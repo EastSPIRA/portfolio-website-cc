@@ -68,4 +68,6 @@ class AddCoinFragmentDialog : DialogFragment() {
         override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
             coinName = parent?.getItemAtPosition(position).toString()
         }
-        override fun onNo
+        override fun onNothingSelected(parent: AdapterView<*>?) {}
+    }
+}
