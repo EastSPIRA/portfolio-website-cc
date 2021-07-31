@@ -7,4 +7,8 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androi
+import androidx.preference.PreferenceManager
+import dagger.hilt.android.AndroidEntryPoint
+import pawel.hn.coinmarketapp.R
+import pawel.hn.coinmarketapp.adapters.CoinsAdapter
+import pawel.hn.coinmar
