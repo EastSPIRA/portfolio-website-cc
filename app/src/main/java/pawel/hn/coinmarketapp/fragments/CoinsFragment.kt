@@ -20,4 +20,8 @@ import pawel.hn.coinmarketapp.viewmodels.CoinsViewModel
 @AndroidEntryPoint
 class CoinsFragment : Fragment(R.layout.fragment_coins) {
 
-    private val viewModel: CoinsViewModel by viewModel
+    private val viewModel: CoinsViewModel by viewModels()
+    private lateinit var searchView: SearchView
+    private lateinit var binding: FragmentCoinsBinding
+    private lateinit var adapter: CoinsAdapter
+    p
