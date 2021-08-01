@@ -24,4 +24,8 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
     private lateinit var searchView: SearchView
     private lateinit var binding: FragmentCoinsBinding
     private lateinit var adapter: CoinsAdapter
-    p
+    private var currency = ""
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+  
