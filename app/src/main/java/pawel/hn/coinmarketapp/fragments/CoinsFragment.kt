@@ -14,4 +14,10 @@ import pawel.hn.coinmarketapp.adapters.CoinsAdapter
 import pawel.hn.coinmarketapp.databinding.FragmentCoinsBinding
 import pawel.hn.coinmarketapp.util.CURRENCY_USD
 import pawel.hn.coinmarketapp.util.onQueryTextChanged
-import pawel.hn.coinmarketapp.viewmodels.CoinsViewMod
+import pawel.hn.coinmarketapp.viewmodels.CoinsViewModel
+
+
+@AndroidEntryPoint
+class CoinsFragment : Fragment(R.layout.fragment_coins) {
+
+    private val viewModel: CoinsViewModel by viewModel
