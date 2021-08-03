@@ -28,4 +28,7 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-  
+    ): View {
+
+        val sharedPreferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
+        currency = sharedPreference
