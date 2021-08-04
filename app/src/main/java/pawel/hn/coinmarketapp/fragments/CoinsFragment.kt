@@ -37,4 +37,8 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
         ) ?: CURRENCY_USD
 
 
-        viewModel.refresh
+        viewModel.refreshData(currency)
+        adapter = CoinsAdapter { coin, isChecked ->
+            viewModel.coinFavouriteClicked(coin, isChecked)
+        }
+        binding = FragmentCoins
