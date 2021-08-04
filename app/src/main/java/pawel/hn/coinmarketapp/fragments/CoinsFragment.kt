@@ -41,4 +41,9 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
         adapter = CoinsAdapter { coin, isChecked ->
             viewModel.coinFavouriteClicked(coin, isChecked)
         }
-        binding = FragmentCoins
+        binding = FragmentCoinsBinding.inflate(inflater, container, false)
+
+        binding.apply {
+            lifecycleOwner = this@CoinsFragment
+            coinViewModel = viewModel
+            errorLayo
