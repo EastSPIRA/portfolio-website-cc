@@ -31,4 +31,10 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
     ): View {
 
         val sharedPreferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
-        currency = sharedPreference
+        currency = sharedPreferences.getString(
+            requireContext().getString(R.string.settings_currency_key),
+            CURRENCY_USD
+        ) ?: CURRENCY_USD
+
+
+        viewModel.refresh
