@@ -57,4 +57,8 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
 
 
     private fun subscribeToObservers() {
-        viewModel.allCoinsMediator.observe(v
+        viewModel.allCoinsMediator.observe(viewLifecycleOwner) { list ->
+            adapter.setCurrency(currency)
+            adapter.submitList(list)
+        }
+        viewModel.observableCoinsAll.observe(viewLifecycleOwner
