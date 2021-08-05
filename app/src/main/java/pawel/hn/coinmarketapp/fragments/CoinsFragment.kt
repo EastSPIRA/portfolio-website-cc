@@ -51,4 +51,10 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
             coinsRecyclerView.itemAnimator = null
         }
         subscribeToObservers()
-    
+        setHasOptionsMenu(true)
+        return binding.root
+    }
+
+
+    private fun subscribeToObservers() {
+        viewModel.allCoinsMediator.observe(v
