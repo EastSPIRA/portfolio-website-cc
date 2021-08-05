@@ -46,4 +46,9 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
         binding.apply {
             lifecycleOwner = this@CoinsFragment
             coinViewModel = viewModel
-            errorLayo
+            errorLayout.viewModel = viewModel
+            coinsRecyclerView.adapter = adapter
+            coinsRecyclerView.itemAnimator = null
+        }
+        subscribeToObservers()
+    
