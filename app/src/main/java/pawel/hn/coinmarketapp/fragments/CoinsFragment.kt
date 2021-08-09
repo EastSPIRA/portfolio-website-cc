@@ -66,4 +66,8 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_coins, menu)
-        val searchItem = menu.findItem(R.id.actio
+        val searchItem = menu.findItem(R.id.action_search)
+        searchView = searchItem.actionView as SearchView
+        searchView.onQueryTextChanged {
+            viewModel.searchQuery(it)
+ 
