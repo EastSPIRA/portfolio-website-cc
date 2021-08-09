@@ -61,4 +61,9 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
             adapter.setCurrency(currency)
             adapter.submitList(list)
         }
-        viewModel.observableCoinsAll.observe(viewLifecycleOwner
+        viewModel.observableCoinsAll.observe(viewLifecycleOwner) {}
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_coins, menu)
+        val searchItem = menu.findItem(R.id.actio
