@@ -76,4 +76,8 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-      
+            R.id.menu_refresh -> {
+                viewModel.refreshData(currency)
+            }
+            R.id.menu_favourite -> {
+                item.isChecked = !item.isChecked
