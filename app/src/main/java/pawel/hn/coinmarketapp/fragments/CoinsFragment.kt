@@ -70,4 +70,10 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
         searchView = searchItem.actionView as SearchView
         searchView.onQueryTextChanged {
             viewModel.searchQuery(it)
- 
+        }
+        searchView.clearFocus()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+      
