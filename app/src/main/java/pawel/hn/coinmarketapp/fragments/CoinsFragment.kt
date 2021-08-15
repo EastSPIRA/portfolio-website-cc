@@ -99,4 +99,9 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
                 )
             } else {
                 menuItem.icon.setTint(
-                    ContextCompat
+                    ContextCompat.getColor(requireContext(), R.color.white)
+                )
+            }
+        }
+    }
+}
