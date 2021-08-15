@@ -91,4 +91,8 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
         return super.onOptionsItemSelected(item)
     }
 
-    private fun applyStarColor(isChecked: Boolean, m
+    private fun applyStarColor(isChecked: Boolean, menuItem: MenuItem) {
+        if(menuItem.itemId == R.id.menu_favourite) {
+            if (isChecked) {
+                menuItem.icon.setTint(
+           
