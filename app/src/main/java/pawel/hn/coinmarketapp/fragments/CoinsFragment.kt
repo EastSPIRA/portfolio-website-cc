@@ -85,4 +85,10 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
                 viewModel.showFavourites(item.isChecked)
             }
             R.id.menu_uncheck -> {
-                view
+                viewModel.unCheckAllFavourites()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun applyStarColor(isChecked: Boolean, m
