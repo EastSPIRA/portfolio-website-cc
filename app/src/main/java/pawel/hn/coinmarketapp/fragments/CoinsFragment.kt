@@ -95,4 +95,8 @@ class CoinsFragment : Fragment(R.layout.fragment_coins) {
         if(menuItem.itemId == R.id.menu_favourite) {
             if (isChecked) {
                 menuItem.icon.setTint(
-           
+                    ContextCompat.getColor(requireContext(), R.color.yellow)
+                )
+            } else {
+                menuItem.icon.setTint(
+                    ContextCompat
