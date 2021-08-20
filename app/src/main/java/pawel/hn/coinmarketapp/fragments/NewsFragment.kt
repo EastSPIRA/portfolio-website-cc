@@ -16,4 +16,8 @@ import pawel.hn.coinmarketapp.viewmodels.NewsViewModel
 
 class NewsFragment : Fragment(R.layout.fragment_news) {
 
-    private lateinit var ne
+    private lateinit var newsAdapter: NewsAdapter
+    private lateinit var parser: Parser
+    private lateinit var binding: FragmentNewsBinding
+
+    private val viewModel: NewsViewModel by viewMo
