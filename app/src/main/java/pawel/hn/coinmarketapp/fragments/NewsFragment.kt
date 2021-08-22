@@ -20,4 +20,8 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
     private lateinit var parser: Parser
     private lateinit var binding: FragmentNewsBinding
 
-    private val viewModel: NewsViewModel by viewMo
+    private val viewModel: NewsViewModel by viewModels()
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        bind
