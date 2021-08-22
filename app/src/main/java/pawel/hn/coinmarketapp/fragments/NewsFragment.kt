@@ -30,3 +30,9 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
             lifecycleOwner = this@NewsFragment
             newsViewModel = viewModel
         }
+
+        parser = Parser.Builder().build().also {
+            getData(it, requireContext())
+        }
+
+        viewModel.rssChannel.observe(viewLifecycleOwner) {
