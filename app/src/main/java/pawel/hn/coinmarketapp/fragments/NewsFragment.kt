@@ -24,4 +24,9 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        bind
+        binding = FragmentNewsBinding.bind(view)
+
+        binding.apply {
+            lifecycleOwner = this@NewsFragment
+            newsViewModel = viewModel
+        }
