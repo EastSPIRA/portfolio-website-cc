@@ -35,4 +35,8 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
             getData(it, requireContext())
         }
 
-        viewModel.rssChannel.observe(viewLifecycleOwner) {
+        viewModel.rssChannel.observe(viewLifecycleOwner) { channel ->
+            if (channel != null) {
+
+                newsAdapter = NewsAdapter(channel.articles) {
+                    val action = NewsFragmentDirections.actionNewsFr
