@@ -39,4 +39,9 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
             if (channel != null) {
 
                 newsAdapter = NewsAdapter(channel.articles) {
-                    val action = NewsFragmentDirections.actionNewsFr
+                    val action = NewsFragmentDirections.actionNewsFragmentToNewsWebFragment(it)
+                    findNavController().navigate(action)
+                }
+
+                binding.recyclerViewNews.adapter = newsAdapter
+  
