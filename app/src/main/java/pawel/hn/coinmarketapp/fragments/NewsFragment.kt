@@ -47,4 +47,10 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
                 binding.swipeLayout.isRefreshing = false
                 if (channel.title != null) {
                     activity?.title = channel.title
-          
+                }
+            }
+            hideShimmerEffect()
+        }
+
+        binding.swipeLayout.setOnRefreshListener {
+            getData(parser, requireContext()
