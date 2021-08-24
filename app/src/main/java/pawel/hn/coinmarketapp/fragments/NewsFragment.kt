@@ -44,4 +44,7 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
                 }
 
                 binding.recyclerViewNews.adapter = newsAdapter
-  
+                binding.swipeLayout.isRefreshing = false
+                if (channel.title != null) {
+                    activity?.title = channel.title
+          
