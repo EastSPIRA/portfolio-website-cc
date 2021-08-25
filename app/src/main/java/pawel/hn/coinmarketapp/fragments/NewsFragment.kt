@@ -53,4 +53,13 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
         }
 
         binding.swipeLayout.setOnRefreshListener {
-            getData(parser, requireContext()
+            getData(parser, requireContext())
+        }
+    }
+
+    private fun getData(parser: Parser, context: Context) {
+        showShimmerEffect()
+        viewModel.fetchFeed(parser, context)
+    }
+
+  
