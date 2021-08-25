@@ -62,4 +62,9 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
         viewModel.fetchFeed(parser, context)
     }
 
-  
+    private fun hideShimmerEffect() {
+        binding.recyclerViewNews.hideShimmer()
+    }
+
+    private fun showShimmerEffect() {
+        binding.recyclerViewNews.showShimmer()
