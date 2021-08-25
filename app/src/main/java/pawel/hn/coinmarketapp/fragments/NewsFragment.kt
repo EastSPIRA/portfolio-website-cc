@@ -68,3 +68,7 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
 
     private fun showShimmerEffect() {
         binding.recyclerViewNews.showShimmer()
+    }
+
+
+}
