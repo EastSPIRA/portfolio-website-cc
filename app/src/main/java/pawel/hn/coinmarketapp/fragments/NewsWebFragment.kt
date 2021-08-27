@@ -13,4 +13,7 @@ class NewsWebFragment : Fragment(R.layout.fragment_news_webview) {
     lateinit var binding: FragmentNewsWebviewBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        s
+        super.onViewCreated(view, savedInstanceState)
+
+        binding = FragmentNewsWebviewBinding.bind(view)
+        val url = NewsWebFragmentArgs.fromBundle
