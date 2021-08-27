@@ -8,4 +8,9 @@ import pawel.hn.coinmarketapp.R
 import pawel.hn.coinmarketapp.databinding.FragmentNewsWebviewBinding
 
 
-class NewsWebFragment : Fragment(R.layout.fra
+class NewsWebFragment : Fragment(R.layout.fragment_news_webview) {
+
+    lateinit var binding: FragmentNewsWebviewBinding
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        s
