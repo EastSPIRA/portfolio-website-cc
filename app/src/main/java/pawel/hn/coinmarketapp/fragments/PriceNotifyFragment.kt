@@ -11,4 +11,9 @@ import dagger.hilt.android.AndroidEntryPoint
 import pawel.hn.coinmarketapp.R
 import pawel.hn.coinmarketapp.databinding.FragmentPriceNotifyBinding
 import pawel.hn.coinmarketapp.viewmodels.PriceNotifyViewModel
-imp
+import pawel.hn.coinmarketapp.util.*
+
+@AndroidEntryPoint
+class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
+
+    private val viewModel: PriceNotifyViewModel
