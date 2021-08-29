@@ -8,4 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.preference.PreferenceManager
 import dagger.hilt.android.AndroidEntryPoint
-impo
+import pawel.hn.coinmarketapp.R
+import pawel.hn.coinmarketapp.databinding.FragmentPriceNotifyBinding
+import pawel.hn.coinmarketapp.viewmodels.PriceNotifyViewModel
+imp
