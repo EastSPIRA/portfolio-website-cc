@@ -16,4 +16,10 @@ import pawel.hn.coinmarketapp.util.*
 @AndroidEntryPoint
 class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
 
-    private val viewModel: PriceNotifyViewModel
+    private val viewModel: PriceNotifyViewModel by viewModels()
+    lateinit var binding: FragmentPriceNotifyBinding
+    private var latestPrice = 0.0
+    private var currency = ""
+
+
+    override
