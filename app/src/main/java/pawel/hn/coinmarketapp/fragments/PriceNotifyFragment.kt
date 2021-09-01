@@ -22,4 +22,7 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
     private var currency = ""
 
 
-    override
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val sharedPreferences: SharedPref
