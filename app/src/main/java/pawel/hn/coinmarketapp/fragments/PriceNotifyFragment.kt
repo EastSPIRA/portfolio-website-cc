@@ -25,4 +25,7 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val sharedPreferences: SharedPref
+        val sharedPreferences: SharedPreferences =
+            PreferenceManager.getDefaultSharedPreferences(requireContext())
+        currency = sharedPreferences.getString(
+            context?.getString(R.string.set
