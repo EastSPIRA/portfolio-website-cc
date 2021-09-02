@@ -28,4 +28,10 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
         val sharedPreferences: SharedPreferences =
             PreferenceManager.getDefaultSharedPreferences(requireContext())
         currency = sharedPreferences.getString(
-            context?.getString(R.string.set
+            context?.getString(R.string.settings_currency_key),
+            CURRENCY_USD
+        )!!
+
+        binding = FragmentPriceNotifyBinding.bind(view)
+
+        val sharedPref = requireActi
