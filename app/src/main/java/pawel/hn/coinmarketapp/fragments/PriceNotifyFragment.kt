@@ -46,3 +46,7 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
                 viewModel.setPriceAlert(getSavedPriceAlert(this))
             }
 
+            notificationSwitch.apply {
+                isChecked = sharedPref.getBoolean(SAVE_SWITCH_ON_OFF, false)
+
+                setOnCheckedChangeListener { _, isChecked -
