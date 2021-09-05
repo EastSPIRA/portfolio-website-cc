@@ -34,4 +34,11 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
 
         binding = FragmentPriceNotifyBinding.bind(view)
 
-        val sharedPref = requireActi
+        val sharedPref = requireActivity().getPreferences(Context.MODE_PRIVATE)
+
+        binding.apply {
+
+            sharedPref.run {
+
+                tvCurrPriceAlert.text = formatPriceAndVolForView(
+                 
