@@ -63,4 +63,9 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
 
             btnPriceAlertUpdate.setOnClickListener {
                 var priceAlert: Int? = null
-                if (!editTextPr
+                if (!editTextPriceToAlert.text.isNullOrEmpty()) {
+                    priceAlert = editTextPriceToAlert.text.toString().toInt()
+                }
+
+                when {
+   
