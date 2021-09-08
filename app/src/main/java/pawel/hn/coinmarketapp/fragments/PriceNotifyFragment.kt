@@ -56,4 +56,11 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
                     } else {
                         sharedPref.put { putBoolean(SAVE_SWITCH_ON_OFF, isChecked) }
                         viewModel.setNotificationOff()
-          
+                    }
+                }
+            }
+
+
+            btnPriceAlertUpdate.setOnClickListener {
+                var priceAlert: Int? = null
+                if (!editTextPr
