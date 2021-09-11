@@ -70,4 +70,8 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
                 when {
                     (priceAlert == null) || (priceAlert == 0) -> {
                         hideKeyboard(view)
-                        showS
+                        showSnack(requireView(),
+                        requireContext().getString(R.string.something_wrong))
+                    }
+
+                    priceAlert - latestPrice < 1000
