@@ -78,4 +78,9 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
                         hideKeyboard(view)
                         showSnack(
                             requireView(),
-                            requireContext().get
+                            requireContext().getString(R.string.info_price_alert_too_small)
+                        )
+                    }
+
+                    else -> {
+                        sharedPref.put { putInt(SAVE_CURRENT_PRICE
