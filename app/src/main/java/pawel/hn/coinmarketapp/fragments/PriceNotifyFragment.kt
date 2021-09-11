@@ -68,4 +68,6 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
                 }
 
                 when {
-   
+                    (priceAlert == null) || (priceAlert == 0) -> {
+                        hideKeyboard(view)
+                        showS
