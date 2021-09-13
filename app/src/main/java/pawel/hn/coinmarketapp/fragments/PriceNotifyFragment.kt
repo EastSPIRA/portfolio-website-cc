@@ -83,4 +83,7 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
                     }
 
                     else -> {
-                        sharedPref.put { putInt(SAVE_CURRENT_PRICE
+                        sharedPref.put { putInt(SAVE_CURRENT_PRICE_ALERT, priceAlert) }
+                        viewModel.setPriceAlert(priceAlert)
+                        tvCurrPriceAlert.text =
+                            formatPriceAndVolForView(pric
