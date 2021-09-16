@@ -86,4 +86,7 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
                         sharedPref.put { putInt(SAVE_CURRENT_PRICE_ALERT, priceAlert) }
                         viewModel.setPriceAlert(priceAlert)
                         tvCurrPriceAlert.text =
-                            formatPriceAndVolForView(pric
+                            formatPriceAndVolForView(priceAlert.toDouble(), ValueType.Fiat, currency)
+                        hideKeyboard(view)
+                        editTextPriceToAlert.apply {
+                        
