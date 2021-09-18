@@ -89,4 +89,12 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
                             formatPriceAndVolForView(priceAlert.toDouble(), ValueType.Fiat, currency)
                         hideKeyboard(view)
                         editTextPriceToAlert.apply {
-                        
+                            text.clear()
+                            clearFocus()
+                        }
+                    }
+                }
+            }
+        }
+
+     
