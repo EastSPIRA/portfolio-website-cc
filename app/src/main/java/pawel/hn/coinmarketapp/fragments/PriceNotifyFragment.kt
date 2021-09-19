@@ -101,4 +101,9 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
     }
 
     private fun getSavedPriceAlert(sharedPref: SharedPreferences): Int =
-        sharedPref.getInt(SAVE_CURRENT_PRICE_ALERT, DEFAULT_PRICE_AL
+        sharedPref.getInt(SAVE_CURRENT_PRICE_ALERT, DEFAULT_PRICE_ALERT)
+
+    private fun subscribeToObservers(binding: FragmentPriceNotifyBinding) {
+
+        viewModel.latestPrice.observe(viewLifecycleOwner) {
+        
