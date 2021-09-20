@@ -106,4 +106,8 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
     private fun subscribeToObservers(binding: FragmentPriceNotifyBinding) {
 
         viewModel.latestPrice.observe(viewLifecycleOwner) {
-        
+            latestPrice = it
+            binding.tvLatestPrice.text = formatPriceAndVolForView(it, ValueType.Fiat, currency)
+        }
+
+        viewModel.notification
