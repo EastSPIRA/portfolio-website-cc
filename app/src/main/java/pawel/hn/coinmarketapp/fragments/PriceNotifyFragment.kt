@@ -110,4 +110,7 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
             binding.tvLatestPrice.text = formatPriceAndVolForView(it, ValueType.Fiat, currency)
         }
 
-        viewModel.notification
+        viewModel.notificationOnOff.observe(viewLifecycleOwner) {
+            viewModel.notifyWorker(it)
+            binding.notificationSwitch.isChecked = it
+   
