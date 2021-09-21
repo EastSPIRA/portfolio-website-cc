@@ -113,4 +113,8 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
         viewModel.notificationOnOff.observe(viewLifecycleOwner) {
             viewModel.notifyWorker(it)
             binding.notificationSwitch.isChecked = it
-   
+        }
+
+        viewModel.notifications.observe(viewLifecycleOwner) { list ->
+            showLog("notifications obs, list: ${list.size}")
+            if (list.i
