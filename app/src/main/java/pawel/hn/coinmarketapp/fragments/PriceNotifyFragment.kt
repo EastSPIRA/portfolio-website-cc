@@ -117,4 +117,9 @@ class PriceNotifyFragment : Fragment(R.layout.fragment_price_notify) {
 
         viewModel.notifications.observe(viewLifecycleOwner) { list ->
             showLog("notifications obs, list: ${list.size}")
-            if (list.i
+            if (list.isEmpty()) {
+                viewModel.setNotificationOff()
+            }
+        }
+    }
+}
