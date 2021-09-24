@@ -11,4 +11,8 @@ import pawel.hn.coinmarketapp.util.WALLET_NO
 
 class WalletPagerFragment : Fragment(R.layout.page_wallet) {
 
-    override fun onViewCreated(view: View, savedInstanceState
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val binding = PageWalletBinding.bind(view)
+        binding.walletPager.a
