@@ -15,4 +15,8 @@ class WalletPagerFragment : Fragment(R.layout.page_wallet) {
         super.onViewCreated(view, savedInstanceState)
 
         val binding = PageWalletBinding.bind(view)
-        binding.walletPager.a
+        binding.walletPager.adapter = WalletsPagerAdapter(this)
+
+        TabLayoutMediator(binding.tabLayout, binding.walletPager) { tab, position ->
+            tab.text = if (position == 3) {
+      
