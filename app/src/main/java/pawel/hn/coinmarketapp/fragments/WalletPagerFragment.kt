@@ -19,4 +19,8 @@ class WalletPagerFragment : Fragment(R.layout.page_wallet) {
 
         TabLayoutMediator(binding.tabLayout, binding.walletPager) { tab, position ->
             tab.text = if (position == 3) {
-      
+                context?.getString(R.string.total)
+            } else {
+                "${context?.getString(R.string.wallet)} ${position+1}" }
+            }.attach()
+ 
