@@ -23,4 +23,11 @@ class WalletPagerFragment : Fragment(R.layout.page_wallet) {
             } else {
                 "${context?.getString(R.string.wallet)} ${position+1}" }
             }.attach()
- 
+    }
+}
+
+class WalletsPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment){
+
+    override fun getItemCount(): Int = 4
+
+    override fun createFragment(position: Int): Frag
