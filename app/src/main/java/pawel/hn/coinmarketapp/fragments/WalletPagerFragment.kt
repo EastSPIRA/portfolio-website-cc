@@ -30,4 +30,11 @@ class WalletsPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment){
 
     override fun getItemCount(): Int = 4
 
-    override fun createFragment(position: Int): Frag
+    override fun createFragment(position: Int): Fragment {
+        val fragment = WalletFragment()
+
+        fragment.arguments = Bundle().apply {
+            putInt(WALLET_NO,position)
+        }
+
+        retur
