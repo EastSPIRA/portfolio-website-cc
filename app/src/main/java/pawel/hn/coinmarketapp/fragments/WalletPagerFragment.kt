@@ -37,4 +37,6 @@ class WalletsPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment){
             putInt(WALLET_NO,position)
         }
 
-        retur
+        return fragment
+    }
+}
