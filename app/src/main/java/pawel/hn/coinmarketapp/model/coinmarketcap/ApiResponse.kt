@@ -17,4 +17,6 @@ data class ApiResponseArray(
     @SerializedName("data")
     val coinData: List<CoinData>,
 
-   
+    @SerializedName("status")
+    val status: Status
+)
