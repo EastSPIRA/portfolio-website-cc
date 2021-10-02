@@ -24,4 +24,10 @@ data class CoinData(
 
   fun apiResponseConvertToCoin(ccy: String): Coin {
         val price = when(ccy) {
-            CURRENCY_USD -> this.quote.USD.pri
+            CURRENCY_USD -> this.quote.USD.price
+            CURRENCY_PLN -> this.quote.PLN.price
+            else -> this.quote.EUR.price
+        }
+
+        val change24h = when(ccy) {
+            CURRENCY_USD -
