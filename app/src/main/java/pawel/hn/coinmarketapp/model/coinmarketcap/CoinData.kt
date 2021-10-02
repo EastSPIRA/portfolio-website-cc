@@ -9,4 +9,13 @@ data class CoinData(
     @SerializedName("id")
     val id: Int,
 
-  
+    @SerializedName("name")
+    val name: String,
+
+    @SerializedName("quote")
+    val quote: Quote,
+
+    @SerializedName("symbol")
+    val symbol: String,
+
+    @SerializedN
