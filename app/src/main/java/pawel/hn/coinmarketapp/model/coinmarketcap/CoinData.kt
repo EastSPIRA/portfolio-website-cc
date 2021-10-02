@@ -18,4 +18,10 @@ data class CoinData(
     @SerializedName("symbol")
     val symbol: String,
 
-    @SerializedN
+    @SerializedName("cmc_rank")
+    val cmcRank: Int
+) {
+
+  fun apiResponseConvertToCoin(ccy: String): Coin {
+        val price = when(ccy) {
+            CURRENCY_USD -> this.quote.USD.pri
