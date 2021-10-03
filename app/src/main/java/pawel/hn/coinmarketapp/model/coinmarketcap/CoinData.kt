@@ -49,4 +49,7 @@ data class CoinData(
             price = price,
             change24h = change24h,
             change7d = change7d,
-      
+            cmcRank = this.cmcRank
+        )
+    }
+}
