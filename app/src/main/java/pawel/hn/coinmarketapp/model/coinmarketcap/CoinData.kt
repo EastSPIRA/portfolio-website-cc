@@ -44,4 +44,9 @@ data class CoinData(
         return Coin(
             coinId = this.id,
             name = this.name,
-    
+            symbol = this.symbol,
+            favourite = false,
+            price = price,
+            change24h = change24h,
+            change7d = change7d,
+      
