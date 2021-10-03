@@ -32,4 +32,9 @@ data class CoinData(
         val change24h = when(ccy) {
             CURRENCY_USD -> this.quote.USD.percentChange24h
             CURRENCY_PLN -> this.quote.PLN.percentChange24h
-            else -> this.quote.EUR.percentChang
+            else -> this.quote.EUR.percentChange24h
+        }
+
+        val change7d = when(ccy) {
+            CURRENCY_USD -> this.quote.USD.percentChange7d
+            CURRENCY_PLN -> this.quote.PLN.percent
