@@ -5,4 +5,9 @@ import com.google.gson.annotations.SerializedName
 
 data class Status(
     @SerializedName("credit_count")
-    val cred
+    val creditCount: Int,
+    @SerializedName("elapsed")
+    val elapsed: Int,
+    @SerializedName("error_code")
+    val errorCode: Int,
+    @SerializedName("error_messag
