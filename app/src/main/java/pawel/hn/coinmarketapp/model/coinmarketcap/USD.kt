@@ -9,4 +9,5 @@ data class USD(
     @SerializedName("percent_change_7d")
     val percentChange7d: Double,
     @SerializedName("price")
-    val price: Dou
+    val price: Double
+)
