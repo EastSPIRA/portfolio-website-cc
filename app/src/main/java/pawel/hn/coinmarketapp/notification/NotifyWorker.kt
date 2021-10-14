@@ -15,4 +15,7 @@ import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-impor
+import pawel.hn.coinmarketapp.R
+import pawel.hn.coinmarketapp.activity.MainActivity
+import pawel.hn.coinmarketapp.repository.CoinsRepository
+import pawel.hn.coinmarketapp.util.*
