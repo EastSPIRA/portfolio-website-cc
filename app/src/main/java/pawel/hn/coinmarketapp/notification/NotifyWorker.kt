@@ -19,3 +19,10 @@ import pawel.hn.coinmarketapp.R
 import pawel.hn.coinmarketapp.activity.MainActivity
 import pawel.hn.coinmarketapp.repository.CoinsRepository
 import pawel.hn.coinmarketapp.util.*
+import javax.inject.Inject
+
+
+@HiltWorker
+class NotifyWorker @AssistedInject constructor(
+    @Assisted val context: Context,
+    @Assisted val workParams: WorkerPa
