@@ -25,4 +25,11 @@ import javax.inject.Inject
 @HiltWorker
 class NotifyWorker @AssistedInject constructor(
     @Assisted val context: Context,
-    @Assisted val workParams: WorkerPa
+    @Assisted val workParams: WorkerParameters
+) : CoroutineWorker(context, workParams) {
+
+    @Inject
+    lateinit var coinsRepository: CoinsRepository
+
+    private var notificationID = 2
+    private val sharedPrefe
