@@ -32,4 +32,6 @@ class NotifyWorker @AssistedInject constructor(
     lateinit var coinsRepository: CoinsRepository
 
     private var notificationID = 2
-    private val sharedPrefe
+    private val sharedPreferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+    private val currency: String = sharedPreferences.getString(
+        context.getString
