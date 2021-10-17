@@ -34,4 +34,9 @@ class NotifyWorker @AssistedInject constructor(
     private var notificationID = 2
     private val sharedPreferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
     private val currency: String = sharedPreferences.getString(
-        context.getString
+        context.getString(R.string.settings_currency_key),
+        CURRENCY_USD
+    )!!
+
+    override suspend fun doWork(): Result {
+        val currentPriceAlert = workPara
