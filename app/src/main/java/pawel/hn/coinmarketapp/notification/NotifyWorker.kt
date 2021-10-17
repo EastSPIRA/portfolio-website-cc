@@ -39,4 +39,9 @@ class NotifyWorker @AssistedInject constructor(
     )!!
 
     override suspend fun doWork(): Result {
-        val currentPriceAlert = workPara
+        val currentPriceAlert = workParams.inputData
+            .getDouble(PRICE_ALERT_INPUT, 10000.0)
+
+
+        withContext(Dispatchers.IO) {
+            val newPrice = coinsRepository.getLatestBitco
