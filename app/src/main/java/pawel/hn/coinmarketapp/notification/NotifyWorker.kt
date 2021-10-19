@@ -50,4 +50,7 @@ class NotifyWorker @AssistedInject constructor(
             if (newPrice != null && newPrice > currentPriceAlert) {
                 sendNotification(
                     "price above: " +
-              
+                            "${formatPriceAndVolForView(currentPriceAlert,
+                                ValueType.Fiat,
+                            currency)}," +
+                   
