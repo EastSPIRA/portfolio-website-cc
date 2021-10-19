@@ -44,4 +44,10 @@ class NotifyWorker @AssistedInject constructor(
 
 
         withContext(Dispatchers.IO) {
-            val newPrice = coinsRepository.getLatestBitco
+            val newPrice = coinsRepository.getLatestBitcoinPrice()
+
+
+            if (newPrice != null && newPrice > currentPriceAlert) {
+                sendNotification(
+                    "price above: " +
+              
