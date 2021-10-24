@@ -53,4 +53,9 @@ class NotifyWorker @AssistedInject constructor(
                             "${formatPriceAndVolForView(currentPriceAlert,
                                 ValueType.Fiat,
                             currency)}," +
-                   
+                            " it's ${formatPriceAndVolForView(newPrice, ValueType.Fiat, currency)}"
+                )
+            coinsRepository.coins.deleteNotification()
+            }
+        }
+      
