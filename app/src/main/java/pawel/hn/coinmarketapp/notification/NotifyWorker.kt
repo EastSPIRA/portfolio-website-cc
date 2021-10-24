@@ -65,4 +65,7 @@ class NotifyWorker @AssistedInject constructor(
 
         val intent = Intent(context, MainActivity::class.java)
 
-        v
+        val pendingIntent = PendingIntent
+            .getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+
+        val notification = NotificationCompat.Builder(conte
