@@ -58,4 +58,11 @@ class NotifyWorker @AssistedInject constructor(
             coinsRepository.coins.deleteNotification()
             }
         }
-      
+        return Result.success()
+    }
+
+    private fun sendNotification(msg: String) {
+
+        val intent = Intent(context, MainActivity::class.java)
+
+        v
