@@ -74,4 +74,9 @@ class NotifyWorker @AssistedInject constructor(
             .setContentIntent(pendingIntent)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setSmallIcon(R.drawable.ic_bitcoin_white)
-            .setLargeIcon(BitmapFactory.decodeResource(context
+            .setLargeIcon(BitmapFactory.decodeResource(context.resources, R.drawable.bitcoin_logo))
+            .build()
+
+        val notificationManager = NotificationManagerCompat.from(context)
+
+        
