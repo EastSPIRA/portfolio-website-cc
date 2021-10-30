@@ -68,4 +68,8 @@ class NotifyWorker @AssistedInject constructor(
         val pendingIntent = PendingIntent
             .getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
-        val notification = NotificationCompat.Builder(conte
+        val notification = NotificationCompat.Builder(context, CHANNEL_ID)
+            .setContentTitle("Bitcoin price alert:")
+            .setContentText(msg)
+            .setContentIntent(pendingIntent)
+            .
