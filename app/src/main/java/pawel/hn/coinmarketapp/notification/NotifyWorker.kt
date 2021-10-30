@@ -72,4 +72,6 @@ class NotifyWorker @AssistedInject constructor(
             .setContentTitle("Bitcoin price alert:")
             .setContentText(msg)
             .setContentIntent(pendingIntent)
-            .
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
+            .setSmallIcon(R.drawable.ic_bitcoin_white)
+            .setLargeIcon(BitmapFactory.decodeResource(context
