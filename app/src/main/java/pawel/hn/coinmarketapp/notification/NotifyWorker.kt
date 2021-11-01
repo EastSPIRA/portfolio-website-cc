@@ -79,4 +79,9 @@ class NotifyWorker @AssistedInject constructor(
 
         val notificationManager = NotificationManagerCompat.from(context)
 
-        
+        notificationManager.notify(notificationID, notification)
+        notificationID++
+    }
+
+
+}
