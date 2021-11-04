@@ -17,4 +17,8 @@ class CoinsRepository @Inject constructor(
 ) {
     var responseError = true
 
-    suspend 
+    suspend fun getCoinsData(currency: String) {
+        runCatching {
+            remote.getCoins(
+                API_QUERY_START,
+                API_QUERY_LIMIT
