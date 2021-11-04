@@ -10,4 +10,11 @@ import pawel.hn.coinmarketapp.util.*
 import javax.inject.Inject
 
 
-class CoinsRe
+class CoinsRepository @Inject constructor(
+    val coins: CoinsData,
+    val wallet: WalletData,
+    private val remote: RemoteData
+) {
+    var responseError = true
+
+    suspend 
