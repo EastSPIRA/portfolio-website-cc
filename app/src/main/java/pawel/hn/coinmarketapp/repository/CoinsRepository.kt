@@ -21,4 +21,10 @@ class CoinsRepository @Inject constructor(
         runCatching {
             remote.getCoins(
                 API_QUERY_START,
-                API_QUERY_LIMIT
+                API_QUERY_LIMIT,
+                currency
+            )
+        }.onSuccess {
+            responseSuccess(it.body(), currency)
+        }.onFailure {
+            responseError = tr
