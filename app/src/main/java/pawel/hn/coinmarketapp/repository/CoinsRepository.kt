@@ -27,4 +27,10 @@ class CoinsRepository @Inject constructor(
         }.onSuccess {
             responseSuccess(it.body(), currency)
         }.onFailure {
-            responseError = tr
+            responseError = true
+            showLog(" Repository exception " + it.message)
+        }
+    }
+
+
+    private suspend fun responseSuccess(response: ApiResponseArray?, cur
