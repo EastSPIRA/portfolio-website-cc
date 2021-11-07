@@ -37,4 +37,9 @@ class CoinsRepository @Inject constructor(
         val list = mutableListOf<Coin>()
         response?.let { coinResponse ->
             responseError = false
-            coinResponse.coinDat
+            coinResponse.coinData.forEach {
+                list.add(it.apiResponseConvertToCoin(currency))
+            }
+
+            if (coins.coinsAll.value.isNullOrEmpty()) {
+                coins.insert
