@@ -33,4 +33,8 @@ class CoinsRepository @Inject constructor(
     }
 
 
-    private suspend fun responseSuccess(response: ApiResponseArray?, cur
+    private suspend fun responseSuccess(response: ApiResponseArray?, currency: String) {
+        val list = mutableListOf<Coin>()
+        response?.let { coinResponse ->
+            responseError = false
+            coinResponse.coinDat
