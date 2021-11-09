@@ -42,4 +42,13 @@ class CoinsRepository @Inject constructor(
             }
 
             if (coins.coinsAll.value.isNullOrEmpty()) {
-                coins.insert
+                coins.insertCoins(list)
+            } else {
+                coins.updateCoins(list)
+            }
+        }
+
+    }
+
+    suspend fun getLatestBitcoinPrice(): Double? {
+  
