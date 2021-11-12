@@ -57,4 +57,7 @@ class CoinsRepository @Inject constructor(
     suspend fun getBitcoinData(): CoinData? {
         var btc: CoinData? = null
         try {
-            v
+            val response = remote.getLatestBitcoinPrice(BITCOIN_ID)
+            if (response.isSuccessful) {
+                response.body()?.let { apiResponse ->
+    
