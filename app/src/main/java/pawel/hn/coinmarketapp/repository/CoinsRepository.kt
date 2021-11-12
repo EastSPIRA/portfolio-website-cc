@@ -60,4 +60,12 @@ class CoinsRepository @Inject constructor(
             val response = remote.getLatestBitcoinPrice(BITCOIN_ID)
             if (response.isSuccessful) {
                 response.body()?.let { apiResponse ->
-    
+                    btc = apiResponse.coinData[1]
+
+                }
+            }
+        } catch (e: Exception) {
+            showLog("Exception btc price: ${e.message}")
+        }
+
+        return b
