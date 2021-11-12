@@ -51,4 +51,10 @@ class CoinsRepository @Inject constructor(
     }
 
     suspend fun getLatestBitcoinPrice(): Double? {
-  
+        return getBitcoinData()?.quote?.USD?.price
+    }
+
+    suspend fun getBitcoinData(): CoinData? {
+        var btc: CoinData? = null
+        try {
+            v
