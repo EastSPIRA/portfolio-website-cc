@@ -68,4 +68,7 @@ class CoinsRepository @Inject constructor(
             showLog("Exception btc price: ${e.message}")
         }
 
-        return b
+        return btc
+    }
+
+}
