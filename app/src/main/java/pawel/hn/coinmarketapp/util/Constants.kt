@@ -21,4 +21,8 @@ const val BASE_URL_NEWS = "https://cointelegraph.com/rss/"
 const val CHANNEL_ID = "channeld"
 const val CHANNEL_NAME = "channelName"
 
-const val BITCOIN_
+const val BITCOIN_ID = "1"
+const val PRICE_ALERT = "priceAlert"
+const val SAVE_SWITCH_ON_OFF = "notificationSwitch"
+const val SAVE_CURRENT_PRICE_ALERT = "currentPriceAlert"
+const va
