@@ -15,3 +15,10 @@ const val BASE_URL_COINS = "https://pro-api.coinmarketcap.com/"
 
 const val API_HEADER = "X-CMC_PRO_API_KEY:"
 
+const val BASE_URL_NEWS = "https://cointelegraph.com/rss/"
+
+// Notification channel
+const val CHANNEL_ID = "channeld"
+const val CHANNEL_NAME = "channelName"
+
+const val BITCOIN_
