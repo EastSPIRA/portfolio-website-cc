@@ -25,4 +25,7 @@ const val BITCOIN_ID = "1"
 const val PRICE_ALERT = "priceAlert"
 const val SAVE_SWITCH_ON_OFF = "notificationSwitch"
 const val SAVE_CURRENT_PRICE_ALERT = "currentPriceAlert"
-const va
+const val PRICE_ALERT_INPUT = "priceAlertInput"
+const val DEFAULT_PRICE_ALERT = 50000
+const val WALLET_NO = "walletNo"
+const val LOGO_URL = "https://s2.coinmarketcap
