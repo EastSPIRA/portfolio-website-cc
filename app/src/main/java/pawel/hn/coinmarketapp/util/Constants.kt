@@ -33,4 +33,9 @@ const val LOGO_SIZE_PX = "64x64"
 const val LOGO_FILE_TYPE = ".png"
 
 //patterns used for formatting displayed p
-const val COIN_PATTERN = "#,
+const val COIN_PATTERN = "#,##0.0000"
+const val FIAT_PATTERN = "#,##0.00"
+
+
+
+
