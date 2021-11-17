@@ -28,4 +28,9 @@ const val SAVE_CURRENT_PRICE_ALERT = "currentPriceAlert"
 const val PRICE_ALERT_INPUT = "priceAlertInput"
 const val DEFAULT_PRICE_ALERT = 50000
 const val WALLET_NO = "walletNo"
-const val LOGO_URL = "https://s2.coinmarketcap
+const val LOGO_URL = "https://s2.coinmarketcap.com/static/img/coins"
+const val LOGO_SIZE_PX = "64x64"
+const val LOGO_FILE_TYPE = ".png"
+
+//patterns used for formatting displayed p
+const val COIN_PATTERN = "#,
