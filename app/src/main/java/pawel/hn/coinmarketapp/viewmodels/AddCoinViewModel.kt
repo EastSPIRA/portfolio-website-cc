@@ -9,4 +9,9 @@ import pawel.hn.coinmarketapp.repository.CoinsRepository
 import javax.inject.Inject
 
 @HiltViewModel
-class AddCoinViewModel @Inject constructor (private val coinsRepository:
+class AddCoinViewModel @Inject constructor (private val coinsRepository: CoinsRepository)
+    : ViewModel() {
+
+    val coins = coinsRepository.coins.coinsAll
+
+    fun createWalletCoin(coinName: String, coinVolume: Double, walle
