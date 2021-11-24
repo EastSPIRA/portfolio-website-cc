@@ -25,4 +25,9 @@ class AddCoinViewModel @Inject constructor (private val coinsRepository: CoinsRe
     }
 
     fun coinsNamesList(): Array<String> {
-        val li
+        val list = Array(coinsRepository.coins.coinsAll.value!!.size){
+            coinsRepository.coins.coinsAll.value!![it].name
+        }
+        list.sort()
+        return list
+ 
