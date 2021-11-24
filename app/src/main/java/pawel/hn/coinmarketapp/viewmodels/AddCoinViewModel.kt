@@ -18,4 +18,11 @@ class AddCoinViewModel @Inject constructor (private val coinsRepository: CoinsRe
         return coinsRepository.wallet.createWalletCoin(coinName, coinVolume, walletNo, coins.value!!)
     }
 
-    fun addToWallet(walletCoin: Wallet
+    fun addToWallet(walletCoin: Wallet) {
+       viewModelScope.launch {
+           coinsRepository.wallet.addToWallet(walletCoin)
+       }
+    }
+
+    fun coinsNamesList(): Array<String> {
+        val li
