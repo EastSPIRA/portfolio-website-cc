@@ -14,4 +14,8 @@ class AddCoinViewModel @Inject constructor (private val coinsRepository: CoinsRe
 
     val coins = coinsRepository.coins.coinsAll
 
-    fun createWalletCoin(coinName: String, coinVolume: Double, walle
+    fun createWalletCoin(coinName: String, coinVolume: Double, walletNo: Int): Wallet {
+        return coinsRepository.wallet.createWalletCoin(coinName, coinVolume, walletNo, coins.value!!)
+    }
+
+    fun addToWallet(walletCoin: Wallet
