@@ -30,4 +30,5 @@ class AddCoinViewModel @Inject constructor (private val coinsRepository: CoinsRe
         }
         list.sort()
         return list
- 
+    }
+}
