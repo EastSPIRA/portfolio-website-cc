@@ -7,4 +7,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import pawel.hn.coinm
+import pawel.hn.coinmarketapp.repository.CoinsRepository
+import pawel.hn.coinmarketapp.util.toMutableLiveData
+
+open class BaseViewModel(private val coinsRepository: CoinsRepository) : V
