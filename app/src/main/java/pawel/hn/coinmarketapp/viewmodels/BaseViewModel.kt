@@ -10,4 +10,9 @@ import kotlinx.coroutines.withContext
 import pawel.hn.coinmarketapp.repository.CoinsRepository
 import pawel.hn.coinmarketapp.util.toMutableLiveData
 
-open class BaseViewModel(private val coinsRepository: CoinsRepository) : V
+open class BaseViewModel(private val coinsRepository: CoinsRepository) : ViewModel() {
+
+    val eventErrorResponse: LiveData<Boolean> = MutableLiveData()
+    val eventProgressBar: LiveData<Boolean> = MutableLiveData()
+
+    fun refreshData(cu
