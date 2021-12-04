@@ -15,4 +15,8 @@ open class BaseViewModel(private val coinsRepository: CoinsRepository) : ViewMod
     val eventErrorResponse: LiveData<Boolean> = MutableLiveData()
     val eventProgressBar: LiveData<Boolean> = MutableLiveData()
 
-    fun refreshData(cu
+    fun refreshData(currency: String) {
+        eventProgressBar.toMutableLiveData().value = true
+
+        viewModelScope.launch(Dispatchers.IO) {
+            coinsRepos
