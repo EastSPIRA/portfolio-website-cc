@@ -50,3 +50,22 @@ class CoinsViewModel @Inject constructor(
         viewModelScope.launch(Dispatchers.IO) {
             coinsRepository.coins.update(coin, isChecked)
         }
+    }
+
+    fun unCheckAllFavourites() {
+        viewModelScope.launch(Dispatchers.IO) {
+            allCoinsMediator.value?.forEach {
+                coinsRepository.coins.update(it, false)
+            }
+        }
+    }
+
+    fun searchQuery(query: String) {
+        searchQuery.value = query
+    }
+
+    fun showFavourites(showFav: Boolean) {
+        showFavourites.postValue(showFav)
+    }
+
+}
