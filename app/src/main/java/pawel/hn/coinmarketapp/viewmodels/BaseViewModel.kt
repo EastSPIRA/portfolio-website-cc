@@ -19,4 +19,8 @@ open class BaseViewModel(private val coinsRepository: CoinsRepository) : ViewMod
         eventProgressBar.toMutableLiveData().value = true
 
         viewModelScope.launch(Dispatchers.IO) {
-            coinsRepos
+            coinsRepository.getCoinsData(currency)
+
+            withContext(Dispatchers.Main){
+                eventProgressBar.toMutableLiveData().value = false
+            
