@@ -23,4 +23,9 @@ open class BaseViewModel(private val coinsRepository: CoinsRepository) : ViewMod
 
             withContext(Dispatchers.Main){
                 eventProgressBar.toMutableLiveData().value = false
-            
+                eventErrorResponse.toMutableLiveData().value = coinsRepository.responseError
+            }
+        }
+    }
+
+}
