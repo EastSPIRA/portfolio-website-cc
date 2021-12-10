@@ -10,4 +10,9 @@ import com.prof.rssparser.Parser
 import kotlinx.coroutines.launch
 import pawel.hn.coinmarketapp.util.BASE_URL_NEWS
 import pawel.hn.coinmarketapp.util.hasInternetConnection
-import pawel.hn.coinmarketapp.util.sh
+import pawel.hn.coinmarketapp.util.showLog
+import pawel.hn.coinmarketapp.util.toMutableLiveData
+
+class NewsViewModel : ViewModel() {
+
+    val rssChannel: LiveData<Channel> = MutableLiveD
