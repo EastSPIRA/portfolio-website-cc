@@ -15,4 +15,9 @@ import pawel.hn.coinmarketapp.util.toMutableLiveData
 
 class NewsViewModel : ViewModel() {
 
-    val rssChannel: LiveData<Channel> = MutableLiveD
+    val rssChannel: LiveData<Channel> = MutableLiveData()
+    val eventError: LiveData<Boolean> = MutableLiveData()
+
+    fun fetchFeed(parser: Parser, context: Context) {
+        if (hasInternetConnection(context)) {
+            vie
