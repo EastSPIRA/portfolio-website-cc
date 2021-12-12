@@ -20,4 +20,8 @@ class NewsViewModel : ViewModel() {
 
     fun fetchFeed(parser: Parser, context: Context) {
         if (hasInternetConnection(context)) {
-            vie
+            viewModelScope.launch {
+                runCatching {
+                    parser.getChannel(BASE_URL_NEWS)
+                }.onSuccess {
+                    if (it.articles
