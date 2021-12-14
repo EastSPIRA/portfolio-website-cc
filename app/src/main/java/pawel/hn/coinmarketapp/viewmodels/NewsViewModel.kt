@@ -31,4 +31,7 @@ class NewsViewModel : ViewModel() {
                         eventError.toMutableLiveData().value = true
                     }
                 }.onFailure {
-                   
+                    showLog(it.message!!)
+                    rssChannel.toMutableLiveData().postValue(
+                        Channel(
+                        
