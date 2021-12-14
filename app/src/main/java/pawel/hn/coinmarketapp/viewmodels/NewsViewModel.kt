@@ -27,4 +27,8 @@ class NewsViewModel : ViewModel() {
                     if (it.articles.isNotEmpty()) {
                         rssChannel.toMutableLiveData().value = it
                         eventError.toMutableLiveData().value = false
-                    } e
+                    } else {
+                        eventError.toMutableLiveData().value = true
+                    }
+                }.onFailure {
+                   
