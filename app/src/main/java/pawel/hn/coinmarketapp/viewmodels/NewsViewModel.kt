@@ -24,4 +24,7 @@ class NewsViewModel : ViewModel() {
                 runCatching {
                     parser.getChannel(BASE_URL_NEWS)
                 }.onSuccess {
-                    if (it.articles
+                    if (it.articles.isNotEmpty()) {
+                        rssChannel.toMutableLiveData().value = it
+                        eventError.toMutableLiveData().value = false
+                    } e
