@@ -39,4 +39,11 @@ class NewsViewModel : ViewModel() {
                             null,
                             null,
                             null,
-              
+                            null,
+                            mutableListOf()
+                        )
+                    )
+                }
+            }
+        } else {
+   
