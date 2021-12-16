@@ -34,4 +34,9 @@ class NewsViewModel : ViewModel() {
                     showLog(it.message!!)
                     rssChannel.toMutableLiveData().postValue(
                         Channel(
-                        
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+              
