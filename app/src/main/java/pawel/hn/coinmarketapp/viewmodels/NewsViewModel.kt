@@ -46,4 +46,7 @@ class NewsViewModel : ViewModel() {
                 }
             }
         } else {
-   
+            eventError.toMutableLiveData().value = true
+        }
+    }
+}
