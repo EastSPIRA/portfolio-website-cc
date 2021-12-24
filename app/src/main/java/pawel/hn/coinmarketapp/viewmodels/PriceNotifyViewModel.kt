@@ -6,4 +6,7 @@ import androidx.work.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.launch
-import pawel.hn.coinma
+import pawel.hn.coinmarketapp.database.Notifications
+import pawel.hn.coinmarketapp.notification.NotifyWorker
+import pawel.hn.coinmarketapp.repository.CoinsRepository
+import pawel.hn.coinmar
