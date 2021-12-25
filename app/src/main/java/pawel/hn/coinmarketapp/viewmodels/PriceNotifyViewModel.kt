@@ -15,4 +15,10 @@ import javax.inject.Inject
 
 @HiltViewModel
 class PriceNotifyViewModel @Inject constructor(
-    private val coin
+    private val coinsRepository: CoinsRepository,
+    @ApplicationContext context: Context
+) : ViewModel() {
+
+
+     val latestPrice: LiveData<Double> = MutableLiveData()
+     val notific
