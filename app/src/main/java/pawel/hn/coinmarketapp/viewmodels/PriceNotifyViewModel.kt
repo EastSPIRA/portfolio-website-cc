@@ -21,4 +21,7 @@ class PriceNotifyViewModel @Inject constructor(
 
 
      val latestPrice: LiveData<Double> = MutableLiveData()
-     val notific
+     val notificationOnOff: LiveData<Boolean> = MutableLiveData()
+
+    val notifications = coinsRepository.coins.notifications
+    private var priceAlertData: Double 
