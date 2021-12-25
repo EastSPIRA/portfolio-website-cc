@@ -9,4 +9,10 @@ import kotlinx.coroutines.launch
 import pawel.hn.coinmarketapp.database.Notifications
 import pawel.hn.coinmarketapp.notification.NotifyWorker
 import pawel.hn.coinmarketapp.repository.CoinsRepository
-import pawel.hn.coinmar
+import pawel.hn.coinmarketapp.util.*
+import java.util.concurrent.TimeUnit
+import javax.inject.Inject
+
+@HiltViewModel
+class PriceNotifyViewModel @Inject constructor(
+    private val coin
