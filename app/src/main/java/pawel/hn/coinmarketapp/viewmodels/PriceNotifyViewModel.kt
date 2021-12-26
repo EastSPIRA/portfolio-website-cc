@@ -24,4 +24,11 @@ class PriceNotifyViewModel @Inject constructor(
      val notificationOnOff: LiveData<Boolean> = MutableLiveData()
 
     val notifications = coinsRepository.coins.notifications
-    private var priceAlertData: Double 
+    private var priceAlertData: Double = 0.0
+    private lateinit var workManager: WorkManager
+    private lateinit var workRequest: PeriodicWorkRequest
+
+
+    init {
+        getLatestPrice()
+        s
