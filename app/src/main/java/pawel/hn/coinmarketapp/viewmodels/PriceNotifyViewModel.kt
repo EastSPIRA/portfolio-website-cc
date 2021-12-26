@@ -31,4 +31,9 @@ class PriceNotifyViewModel @Inject constructor(
 
     init {
         getLatestPrice()
-        s
+        setUpWorkManager(context)
+    }
+
+    fun notifyWorker(notificationOnOff: Boolean) {
+        if (notificationOnOff) {
+            workManager.enqueueUniquePeriodicWork(
