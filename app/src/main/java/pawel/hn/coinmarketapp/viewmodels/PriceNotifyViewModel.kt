@@ -37,3 +37,8 @@ class PriceNotifyViewModel @Inject constructor(
     fun notifyWorker(notificationOnOff: Boolean) {
         if (notificationOnOff) {
             workManager.enqueueUniquePeriodicWork(
+                PRICE_ALERT,
+                ExistingPeriodicWorkPolicy.REPLACE,
+                workRequest
+            )
+            val notificat
