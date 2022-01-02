@@ -41,4 +41,7 @@ class PriceNotifyViewModel @Inject constructor(
                 ExistingPeriodicWorkPolicy.REPLACE,
                 workRequest
             )
-            val notificat
+            val notification = Notifications(workRequest.id.toString(), false)
+            viewModelScope.launch {
+                coinsRepository.coins.insertNotifications(notification)
+ 
