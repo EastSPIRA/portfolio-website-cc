@@ -57,4 +57,10 @@ class PriceNotifyViewModel @Inject constructor(
     fun setPriceAlert(priceAlert: Int) {
         priceAlertData = priceAlert.toDouble()
         setCurrentPriceAlert(priceAlertData)
-      
+        if (notificationOnOff.value == true) {
+            notifyWorker(true)
+        }
+    }
+
+    private fun setCurrentPriceAlert(alertPrice: Double) {
+   
