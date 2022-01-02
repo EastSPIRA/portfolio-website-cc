@@ -51,4 +51,10 @@ class PriceNotifyViewModel @Inject constructor(
     }
 
     private fun setUpWorkManager(context: Context) {
-        workManager = WorkManager
+        workManager = WorkManager.getInstance(context)
+    }
+
+    fun setPriceAlert(priceAlert: Int) {
+        priceAlertData = priceAlert.toDouble()
+        setCurrentPriceAlert(priceAlertData)
+      
