@@ -44,4 +44,11 @@ class PriceNotifyViewModel @Inject constructor(
             val notification = Notifications(workRequest.id.toString(), false)
             viewModelScope.launch {
                 coinsRepository.coins.insertNotifications(notification)
- 
+            }
+        } else {
+            workManager.cancelUniqueWork(PRICE_ALERT)
+        }
+    }
+
+    private fun setUpWorkManager(context: Context) {
+        workManager = WorkManager
