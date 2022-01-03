@@ -63,4 +63,6 @@ class PriceNotifyViewModel @Inject constructor(
     }
 
     private fun setCurrentPriceAlert(alertPrice: Double) {
-   
+        priceAlertData = alertPrice
+        workRequest = PeriodicWorkRequestBuilder<NotifyWorker>(10, TimeUnit.MINUTES)
+            .setInitialDelay(15, TimeUnit
