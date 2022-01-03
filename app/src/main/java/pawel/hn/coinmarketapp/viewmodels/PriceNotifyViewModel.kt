@@ -72,4 +72,9 @@ class PriceNotifyViewModel @Inject constructor(
 
     private fun getLatestPrice() {
         viewModelScope.launch {
-            val price =
+            val price = coinsRepository.getLatestBitcoinPrice()
+            price?.let {
+                latestPrice.toMutableLiveData().postValue(it)
+            }
+        }
+    }
