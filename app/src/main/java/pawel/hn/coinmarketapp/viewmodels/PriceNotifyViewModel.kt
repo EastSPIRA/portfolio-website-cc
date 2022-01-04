@@ -78,3 +78,11 @@ class PriceNotifyViewModel @Inject constructor(
             }
         }
     }
+
+
+    fun setNotificationOn() {
+        notificationOnOff.toMutableLiveData().postValue(true)
+    }
+
+    fun setNotificationOff() {
+        not
