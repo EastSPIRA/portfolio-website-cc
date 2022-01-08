@@ -89,4 +89,6 @@ class PriceNotifyViewModel @Inject constructor(
     }
 
     private fun setDataForWorker(priceAlert: Double): Data {
-        return Data.Builder().putDouble(PRICE_
+        return Data.Builder().putDouble(PRICE_ALERT_INPUT, priceAlert).build()
+    }
+}
