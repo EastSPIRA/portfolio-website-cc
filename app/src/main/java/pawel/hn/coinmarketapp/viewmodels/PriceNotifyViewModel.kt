@@ -85,4 +85,8 @@ class PriceNotifyViewModel @Inject constructor(
     }
 
     fun setNotificationOff() {
-        not
+        notificationOnOff.toMutableLiveData().postValue(false)
+    }
+
+    private fun setDataForWorker(priceAlert: Double): Data {
+        return Data.Builder().putDouble(PRICE_
