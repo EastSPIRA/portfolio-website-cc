@@ -14,4 +14,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import pawel.hn.coinmarketapp.R
 import pawel.hn.coinmarketapp.database.Coin
-import pawel.hn
+import pawel.hn.coinmarketapp.database.Wallet
+import pawel.hn.coinmarketapp.repository.CoinsRepository
+import pawel.hn.coinmarketapp.util.toMutableLiveData
+import javax.inject.Inj
