@@ -23,4 +23,7 @@ import javax.inject.Inject
 class WalletViewModel @Inject constructor(
     private val coinsRepository: CoinsRepository) : BaseViewModel(coinsRepository) {
 
-    v
+    val walletLiveData = coinsRepository.wallet.wallet
+    val coinLiveData = coinsRepository.coins.coinsAll
+
+    fun calculateTotalBalance(list: List<Wallet>): Double = 
