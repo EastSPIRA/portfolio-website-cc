@@ -17,4 +17,10 @@ import pawel.hn.coinmarketapp.database.Coin
 import pawel.hn.coinmarketapp.database.Wallet
 import pawel.hn.coinmarketapp.repository.CoinsRepository
 import pawel.hn.coinmarketapp.util.toMutableLiveData
-import javax.inject.Inj
+import javax.inject.Inject
+
+@HiltViewModel
+class WalletViewModel @Inject constructor(
+    private val coinsRepository: CoinsRepository) : BaseViewModel(coinsRepository) {
+
+    v
