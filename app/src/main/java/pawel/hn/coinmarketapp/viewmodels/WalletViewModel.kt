@@ -26,4 +26,9 @@ class WalletViewModel @Inject constructor(
     val walletLiveData = coinsRepository.wallet.wallet
     val coinLiveData = coinsRepository.coins.coinsAll
 
-    fun calculateTotalBalance(list: List<Wallet>): Double = 
+    fun calculateTotalBalance(list: List<Wallet>): Double = list.sumOf { it.total }
+
+    fun totalWallet(list: List<Wallet>): List<Wallet> {
+
+        val totalList = mutableListOf<Wallet>()
+        val listOfCoinIds = m
