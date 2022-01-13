@@ -37,4 +37,6 @@ class WalletViewModel @Inject constructor(
             if (listOfCoinIds.contains(coinLoop.coinId)) {
                 continue
             } else {
-  
+                listOfCoinIds.add(coinLoop.coinId)
+                val tempList = list.filter { it.coinId == coinLoop.coinId }
+                val newVolume = tempList.
