@@ -31,4 +31,10 @@ class WalletViewModel @Inject constructor(
     fun totalWallet(list: List<Wallet>): List<Wallet> {
 
         val totalList = mutableListOf<Wallet>()
-        val listOfCoinIds = m
+        val listOfCoinIds = mutableListOf<Int>()
+
+        for (coinLoop in list) {
+            if (listOfCoinIds.contains(coinLoop.coinId)) {
+                continue
+            } else {
+  
