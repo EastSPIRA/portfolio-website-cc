@@ -39,4 +39,8 @@ class WalletViewModel @Inject constructor(
             } else {
                 listOfCoinIds.add(coinLoop.coinId)
                 val tempList = list.filter { it.coinId == coinLoop.coinId }
-                val newVolume = tempList.
+                val newVolume = tempList.sumOf{ it.volume }
+                val newTotal = tempList.sumOf { it.total }
+                totalList.add(
+                    Wallet(
+                        coinId = coinLoop.coinId,
