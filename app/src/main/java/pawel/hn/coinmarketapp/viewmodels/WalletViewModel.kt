@@ -55,4 +55,8 @@ class WalletViewModel @Inject constructor(
             }
         }
 
-        ret
+        return totalList.sortedByDescending { it.total }
+    }
+
+    fun onTaskSwiped(coin: Wallet) = viewModelScope.launch {
+        coinsRepository.wallet.deleteFromWallet(co
