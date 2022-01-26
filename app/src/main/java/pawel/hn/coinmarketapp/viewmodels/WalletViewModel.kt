@@ -44,3 +44,7 @@ class WalletViewModel @Inject constructor(
                 totalList.add(
                     Wallet(
                         coinId = coinLoop.coinId,
+                        name = coinLoop.name,
+                        symbol = coinLoop.symbol,
+                        volume = newVolume,
+                        price = coi
