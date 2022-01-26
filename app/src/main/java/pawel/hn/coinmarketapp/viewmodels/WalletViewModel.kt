@@ -47,4 +47,12 @@ class WalletViewModel @Inject constructor(
                         name = coinLoop.name,
                         symbol = coinLoop.symbol,
                         volume = newVolume,
-                        price = coi
+                        price = coinLoop.price,
+                        total = newTotal,
+                        walletNo = 3
+                    )
+                )
+            }
+        }
+
+        ret
