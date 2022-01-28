@@ -65,4 +65,8 @@ class WalletViewModel @Inject constructor(
     fun walletRefresh(list: List<Coin>) = viewModelScope.launch {
 
         val listTemp = list.filter { coin ->
-            coin.name == walletLiveData.value?.f
+            coin.name == walletLiveData.value?.find { it.name == coin.name }?.name
+        }
+        if (listTemp.isNullOrEmpty()) {
+            eventProgressBar.toMutableLiveData().value = false
+        
