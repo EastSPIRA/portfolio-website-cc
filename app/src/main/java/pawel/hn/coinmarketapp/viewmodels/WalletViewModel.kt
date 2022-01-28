@@ -69,4 +69,8 @@ class WalletViewModel @Inject constructor(
         }
         if (listTemp.isNullOrEmpty()) {
             eventProgressBar.toMutableLiveData().value = false
-        
+            return@launch
+        }
+        walletLiveData.value!!.forEach { coin ->
+            val newPrice = listTemp.filter { it.name == coin.name }[0].price
+           
