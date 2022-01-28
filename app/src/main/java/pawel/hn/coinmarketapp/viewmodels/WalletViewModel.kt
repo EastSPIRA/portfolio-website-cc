@@ -59,4 +59,10 @@ class WalletViewModel @Inject constructor(
     }
 
     fun onTaskSwiped(coin: Wallet) = viewModelScope.launch {
-        coinsRepository.wallet.deleteFromWallet(co
+        coinsRepository.wallet.deleteFromWallet(coin)
+    }
+
+    fun walletRefresh(list: List<Coin>) = viewModelScope.launch {
+
+        val listTemp = list.filter { coin ->
+            coin.name == walletLiveData.value?.f
