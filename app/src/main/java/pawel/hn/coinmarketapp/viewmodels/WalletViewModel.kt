@@ -79,4 +79,11 @@ class WalletViewModel @Inject constructor(
 
     fun deleteAll() {
         viewModelScope.launch {
-            coinsRepository.wallet.deleteAllFrom
+            coinsRepository.wallet.deleteAllFromWallets()
+        }
+    }
+
+
+    fun setChart(list: List<Wallet>, pieChart: PieChart, context: Context) {
+        val entries = ArrayList<PieEntry>()
+        if (!list.isNullO
