@@ -73,4 +73,10 @@ class WalletViewModel @Inject constructor(
         }
         walletLiveData.value!!.forEach { coin ->
             val newPrice = listTemp.filter { it.name == coin.name }[0].price
-           
+            coinsRepository.wallet.updateWallet(coin, newPrice)
+        }
+    }
+
+    fun deleteAll() {
+        viewModelScope.launch {
+            coinsRepository.wallet.deleteAllFrom
