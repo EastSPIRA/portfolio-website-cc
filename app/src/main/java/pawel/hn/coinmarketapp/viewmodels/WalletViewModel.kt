@@ -86,4 +86,12 @@ class WalletViewModel @Inject constructor(
 
     fun setChart(list: List<Wallet>, pieChart: PieChart, context: Context) {
         val entries = ArrayList<PieEntry>()
-        if (!list.isNullO
+        if (!list.isNullOrEmpty()) {
+            list.forEach {
+                entries.add(
+                    PieEntry(it.total.toFloat(), it.symbol)
+                )
+            }
+        }
+
+        val 
