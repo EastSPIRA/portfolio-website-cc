@@ -99,3 +99,9 @@ class WalletViewModel @Inject constructor(
             R.color.chartColor1,
             R.color.chartColor2,
             R.color.chartColor3,
+            R.color.chartColor4,
+            R.color.chartColor5,
+            R.color.chartColor6,
+            R.color.chartColor7,
+            R.color.chartColor8,
+     
