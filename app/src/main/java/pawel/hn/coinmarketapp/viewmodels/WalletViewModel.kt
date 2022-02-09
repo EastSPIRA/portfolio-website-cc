@@ -94,4 +94,8 @@ class WalletViewModel @Inject constructor(
             }
         }
 
-        val 
+        val setData = PieDataSet(entries, "Wallet")
+        val colorIds = listOf(
+            R.color.chartColor1,
+            R.color.chartColor2,
+            R.color.chartColor3,
