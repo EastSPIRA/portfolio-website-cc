@@ -104,4 +104,11 @@ class WalletViewModel @Inject constructor(
             R.color.chartColor6,
             R.color.chartColor7,
             R.color.chartColor8,
-     
+            R.color.chartColor9
+        )
+        val colorList = colorIds.map {
+            ContextCompat.getColor(context, it)
+        }
+
+        setData.apply {
+       
