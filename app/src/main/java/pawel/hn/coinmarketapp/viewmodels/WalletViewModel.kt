@@ -114,4 +114,8 @@ class WalletViewModel @Inject constructor(
             colors = colorList
             sliceSpace = 2f
             yValuePosition = PieDataSet.ValuePosition.OUTSIDE_SLICE
-            xValuePosition = PieDataSet.ValuePosition.OU
+            xValuePosition = PieDataSet.ValuePosition.OUTSIDE_SLICE
+            valueTextColor = R.color.coinsListHeader
+            valueTextSize = 12f
+            valueFormatter = PercentFormatter(pieChart)
+            va
