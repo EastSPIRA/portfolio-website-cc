@@ -111,4 +111,7 @@ class WalletViewModel @Inject constructor(
         }
 
         setData.apply {
-       
+            colors = colorList
+            sliceSpace = 2f
+            yValuePosition = PieDataSet.ValuePosition.OUTSIDE_SLICE
+            xValuePosition = PieDataSet.ValuePosition.OU
