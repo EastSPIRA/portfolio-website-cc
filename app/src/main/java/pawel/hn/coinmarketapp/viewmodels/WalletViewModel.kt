@@ -123,4 +123,9 @@ class WalletViewModel @Inject constructor(
             valueLinePart2Length = 0.4f
         }
 
-        val dataPie = P
+        val dataPie = PieData(setData)
+        dataPie.setDrawValues(true)
+        pieChart.apply {
+            data = dataPie
+            setUsePercentValues(true)
+            d
