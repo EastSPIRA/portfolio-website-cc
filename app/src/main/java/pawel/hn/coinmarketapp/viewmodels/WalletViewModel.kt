@@ -118,4 +118,9 @@ class WalletViewModel @Inject constructor(
             valueTextColor = R.color.coinsListHeader
             valueTextSize = 12f
             valueFormatter = PercentFormatter(pieChart)
-            va
+            valueLinePart1OffsetPercentage = 80f
+            valueLinePart1Length = 0.3f
+            valueLinePart2Length = 0.4f
+        }
+
+        val dataPie = P
