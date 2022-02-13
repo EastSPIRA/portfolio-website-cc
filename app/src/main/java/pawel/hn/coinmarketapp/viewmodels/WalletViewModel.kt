@@ -132,3 +132,7 @@ class WalletViewModel @Inject constructor(
             legend.isEnabled = false
             setEntryLabelTextSize(14f)
             setEntryLabelTypeface(Typeface.MONOSPACE)
+            isDrawHoleEnabled = true
+            setEntryLabelColor(R.color.coinsListHeader)
+            setNoDataText("Empty wallet")
+            inva
