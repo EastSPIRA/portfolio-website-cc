@@ -135,4 +135,7 @@ class WalletViewModel @Inject constructor(
             isDrawHoleEnabled = true
             setEntryLabelColor(R.color.coinsListHeader)
             setNoDataText("Empty wallet")
-            inva
+            invalidate()
+        }
+    }
+}
