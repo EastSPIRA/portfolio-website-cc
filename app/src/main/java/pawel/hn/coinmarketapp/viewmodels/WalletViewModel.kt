@@ -128,4 +128,7 @@ class WalletViewModel @Inject constructor(
         pieChart.apply {
             data = dataPie
             setUsePercentValues(true)
-            d
+            description.isEnabled = false
+            legend.isEnabled = false
+            setEntryLabelTextSize(14f)
+            setEntryLabelTypeface(Typeface.MONOSPACE)
