@@ -123,3 +123,9 @@ class BtcWidget : AppWidgetProvider() {
 
 
     override fun onDisabled(context: Context?) {
+        super.onDisabled(context)
+        job.cancel()
+    }
+
+
+}
