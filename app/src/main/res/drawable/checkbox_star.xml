@@ -10,4 +10,9 @@
         android:drawable="@drawable/ic_star_checked"/>
 
     <item
-      
+        android:state_checked="false"
+        android:drawable="@drawable/ic_star_unchecked"/>
+
+    <item
+        android:state_activated="true"
+        android:drawable="
