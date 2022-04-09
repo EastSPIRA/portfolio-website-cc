@@ -60,3 +60,16 @@
             android:id="@+id/error_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="12dp"
+            layout="@layout/layout_error"
+            tools:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/coins_recycler_view"
+            app:layout_constraintEnd_toEndOf="@+id/headerLayout"
+            app:layout_constraintStart_toStartOf="@+id/headerLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
