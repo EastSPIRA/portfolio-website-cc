@@ -9,4 +9,10 @@
     android:padding="8dp">
 
     <LinearLayout
-        android:layout_width="wrap_con
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            andro
