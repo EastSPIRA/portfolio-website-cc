@@ -22,4 +22,11 @@
             android:padding="8dp"
             android:text="@string/about"
             android:textColor="@color/white"
-            android:background="@col
+            android:background="@color/mediumGrey"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+   
