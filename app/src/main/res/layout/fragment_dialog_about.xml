@@ -36,4 +36,8 @@
             style="@style/TextAppearance.AppCompat.Body2"
             android:textAlignment="center"
             android:text="@string/done_by"
-            an
+            android:textColor="@color/dialogText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content
