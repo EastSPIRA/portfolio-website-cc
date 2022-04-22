@@ -53,4 +53,9 @@
             android:layout_marginBottom="10dp"
             android:textAlignment="center"
             style="@style/TextAppearance.AppCompat.Body1"
-   
+            android:text="@string/about_data"
+            android:textColor="@color/dialogText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:l
