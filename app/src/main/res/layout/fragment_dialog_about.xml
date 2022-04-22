@@ -58,4 +58,8 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:l
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            style="@style/TextAppearance.AppCompat.Body1"
+            an
