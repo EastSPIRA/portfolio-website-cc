@@ -62,4 +62,9 @@
             android:layout_marginBottom="10dp"
             android:textAlignment="center"
             style="@style/TextAppearance.AppCompat.Body1"
-            an
+            android:text="@string/about_news"
+            android:textColor="@color/dialogText" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
