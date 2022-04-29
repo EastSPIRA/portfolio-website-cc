@@ -6,4 +6,10 @@
     <data>
 
         <variable
-            nam
+            name="newsViewModel"
+            type="pawel.hn.coinmarketapp.viewmodels.NewsViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/root_layout"
+     
