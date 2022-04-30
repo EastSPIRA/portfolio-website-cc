@@ -19,4 +19,8 @@
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipe_layout"
             android:layout_width="match_parent"
-            android:layout
+            android:layout_height="match_parent">
+
+            <com.todkars.shimmer.ShimmerRecyclerView
+                android:id="@+id/recycler_view_news"
+          
