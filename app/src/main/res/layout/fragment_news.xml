@@ -25,4 +25,6 @@
                 android:id="@+id/recycler_view_news"
                 errorViewVisibility="@{newsViewModel.eventError}"
                 android:layout_width="match_parent"
-                android:layout_
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:shimmer_recycler_item_coun
