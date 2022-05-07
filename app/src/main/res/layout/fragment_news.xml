@@ -33,4 +33,8 @@
 
 
 
-        </androidx.swiperefres
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/text_view_error_response"
+            errorViewVisibility="@{newsViewModel.ev
