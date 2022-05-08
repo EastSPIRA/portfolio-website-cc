@@ -41,4 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            an
+            android:layout_margin="4dp"
+            android:background="@color/responseErrorBackground"
+            android:text="@string/error_occurred"
+            android:textAlignment="center
