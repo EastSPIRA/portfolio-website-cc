@@ -18,4 +18,8 @@
         android:padding="8dp">
 
 
-        
+        <ImageView
+            android:id="@+id/coin_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:lay
