@@ -12,4 +12,10 @@
     app:strokeColor="@color/cardStroke"
     app:strokeWidth="1dp">
 
-    <android
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        
