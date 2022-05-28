@@ -28,4 +28,9 @@
             android:contentDescription="@string/coin_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_name_portfolio"
+            android:layout_width="0dp"
+            android:layout_h
