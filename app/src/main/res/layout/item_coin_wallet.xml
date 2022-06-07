@@ -43,4 +43,9 @@
             android:textColor="@color/coinName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/guideline1"
-            app:layout_constraintStart_toEndOf="@id/coin
+            app:layout_constraintStart_toEndOf="@id/coin_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name" />
+
+        <androidx.constraintlayout.widget.Guideline
+            androi
