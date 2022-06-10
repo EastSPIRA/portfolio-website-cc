@@ -68,4 +68,7 @@
             android:layout_height="20dp"
             android:autoSizeTextType="uniform"
             android:maxLength="16"
-            a
+            android:textAlignment="center"
+            android:textColor="@color/coinsListHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:l
