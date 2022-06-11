@@ -71,4 +71,8 @@
             android:textAlignment="center"
             android:textColor="@color/coinsListHeader"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
-            app:l
+            app:layout_constraintStart_toEndOf="@id/guideline1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1.345678" />
+
+    
