@@ -75,4 +75,8 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="1.345678" />
 
-    
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:
