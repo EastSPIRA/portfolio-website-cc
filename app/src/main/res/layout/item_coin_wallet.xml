@@ -82,4 +82,6 @@
             android:layout_gravity="center"
             android:autoSizeTextType="uniform"
             android:background="@color/walletLine"
-            app:layout_
+            app:layout_constraintEnd_toStartOf="@id/guideline2"
+            app:layout_constraintStart_toEndOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/text_view_v
