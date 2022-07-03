@@ -84,4 +84,11 @@
             android:background="@color/walletLine"
             app:layout_constraintEnd_toStartOf="@id/guideline2"
             app:layout_constraintStart_toEndOf="@id/guideline1"
-            app:layout_constraintTop_toBottomOf="@id/text_view_v
+            app:layout_constraintTop_toBottomOf="@id/text_view_volume" />
+
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+    
