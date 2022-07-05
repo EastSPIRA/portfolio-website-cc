@@ -94,4 +94,7 @@
             android:autoSizeTextType="uniform"
             android:maxLength="16"
             android:textAlignment="center"
-            android:te
+            android:textColor="@color/coinsListHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+        
