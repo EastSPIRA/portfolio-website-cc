@@ -97,4 +97,10 @@
             android:textColor="@color/coinsListHeader"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline1"
-        
+            app:layout_constraintTop_toBottomOf="@id/view"
+            tools:text="50,100.24" />
+
+
+        <TextView
+            android:id="@+id/text_view_total"
+            android:layout_width
