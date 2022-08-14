@@ -28,4 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
             android:layout_marginStart="4dp"
-            android
+            android:background="@color/checkboxBackground"
+            android:button="@drawable/checkbox_star"
+            android:minWidth="0dp"
+            android:minHeight="0dp" />
+
