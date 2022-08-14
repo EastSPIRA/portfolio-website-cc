@@ -33,3 +33,9 @@
             android:minWidth="0dp"
             android:minHeight="0dp" />
 
+
+        <ImageView
+            android:id="@+id/coin_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin
