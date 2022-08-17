@@ -44,4 +44,8 @@
             android:contentDescription="@string/coin_logo" />
 
         <LinearLayout
-       
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1.3"
+    
