@@ -48,4 +48,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1.3"
-    
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_name"
+                style="@style/
