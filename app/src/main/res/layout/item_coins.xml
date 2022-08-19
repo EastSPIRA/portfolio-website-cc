@@ -57,4 +57,8 @@
                 tools:text="Name"
                 android:textColor="@color/coinName"/>
 
-            <Te
+            <TextView
+                android:id="@+id/text_view_symbol"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+       
