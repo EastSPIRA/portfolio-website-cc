@@ -61,4 +61,7 @@
                 android:id="@+id/text_view_symbol"
                 android:textSize="12sp"
                 android:layout_width="match_parent"
-       
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                tools:text="BTC"
+                android:text
