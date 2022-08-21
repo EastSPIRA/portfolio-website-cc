@@ -64,4 +64,11 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="textStart"
                 tools:text="BTC"
-                android:text
+                android:textColor="@color/coinName"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_price_coin"
+            android:layout_width="0d
