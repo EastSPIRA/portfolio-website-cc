@@ -38,4 +38,8 @@
             android:id="@+id/text_view_news_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lay
+            android:layout_margin="8dp"
+            android:background="#80000000"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize=
