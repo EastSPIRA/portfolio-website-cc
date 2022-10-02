@@ -54,4 +54,7 @@
             android:layout_margin="8dp"
             android:background="#80000000"
             android:textColor="@color/white"
-    
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constrai
