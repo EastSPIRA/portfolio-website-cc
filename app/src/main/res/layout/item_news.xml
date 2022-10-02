@@ -42,4 +42,7 @@
             android:background="#80000000"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize=
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_news_title"
+          
