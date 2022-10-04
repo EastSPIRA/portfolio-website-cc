@@ -57,4 +57,15 @@
             android:textStyle="bold"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constrai
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Description" />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.wid
