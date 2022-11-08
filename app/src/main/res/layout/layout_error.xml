@@ -5,4 +5,9 @@
     <data>
         <variable
             name="viewModel"
-            type="pawel.hn
+            type="pawel.hn.coinmarketapp.viewmodels.BaseViewModel" />
+    </data>
+
+    <TextView
+        android:id="@+id/text_view_error_response"
+        android:layout_width="match_parent"
