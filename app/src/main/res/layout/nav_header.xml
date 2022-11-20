@@ -5,4 +5,9 @@
     android:id="@+id/navHeader"
     android:layout_width="match_parent"
     android:layout_height="140dp"
-    andro
+    android:layout_marginBottom="20dp">
+
+    <ImageView
+        android:id="@+id/navHeaderImage"
+        android:layout_width="0dp"
+        android:lay
