@@ -5,4 +5,9 @@
     <group android:id="@+id/group1">
         <item
             android:id="@+id/coinsFragment"
-            and
+            android:icon="@drawable/ic_bitcoin"
+            android:title="@string/coins" />
+
+        <item
+            android:id="@+id/walletsFragment"
+            andr
