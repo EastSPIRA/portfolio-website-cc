@@ -15,4 +15,9 @@
 
         <item
             android:id="@+id/newsFragment"
-            
+            android:icon="@drawable/ic_rss"
+            android:title="@string/news" />
+
+        <item
+            android:id="@+id/priceNotifyFragment"
+            android:icon="@draw
