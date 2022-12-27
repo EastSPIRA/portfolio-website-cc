@@ -20,4 +20,11 @@
 
         <item
             android:id="@+id/priceNotifyFragment"
-            android:icon="@draw
+            android:icon="@drawable/ic_alert"
+            android:title="@string/price_change_alert" />
+
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/settingsFragment"
