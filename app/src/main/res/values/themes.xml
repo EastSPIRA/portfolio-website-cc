@@ -4,4 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">#4f83cc</item>
         <item name="colorPrimaryVariant">#4f83cc</item>
-        <item name=
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">#01579b</item>
+        <!-- Secondary brand color. -->
+        <ite
