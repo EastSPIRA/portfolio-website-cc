@@ -7,4 +7,6 @@
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:statusBarColor">#01579b</item>
         <!-- Secondary brand color. -->
-        <ite
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSeconda
