@@ -33,4 +33,7 @@
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 
-    <style name="Main
+    <style name="MainListItems">
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="a
