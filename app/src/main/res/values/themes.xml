@@ -41,4 +41,7 @@
         <item name="android:lines">1</item>
     </style>
 
-    <style name="MPrice
+    <style name="MPriceChange">
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_
