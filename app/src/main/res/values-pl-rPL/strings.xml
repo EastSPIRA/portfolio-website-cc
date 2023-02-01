@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="coin">Krypto</string>
-    <string name="coin_symb
+    <string name="coin_symbol">Symbol</string>
+    <string name="coin_quote">Cena</string>
+    <string name="menu_search">Szukaj</string>
+    <string name="menu_refresh">Odśwież</string>
+    
