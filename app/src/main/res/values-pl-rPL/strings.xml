@@ -5,4 +5,6 @@
     <string name="coin_quote">Cena</string>
     <string name="menu_search">Szukaj</string>
     <string name="menu_refresh">Odśwież</string>
-    
+    <string name="menu_show_ticked">Pokaż ulubione</string>
+    <string name="menu_uncheck_all">Odznacz wszystko</string>
+    <string name="wallet_button_add_coins">Dodaj</strin
