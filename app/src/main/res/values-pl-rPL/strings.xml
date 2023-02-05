@@ -11,4 +11,7 @@
     <string name="total">Total</string>
     <string name="volume">Ilość</string>
     <string name="wallet">Portfel</string>
-    <string name="coins">
+    <string name="coins">Coiny</string>
+    <string name="dialog_title">Wybierz krypto i podaj ilość</string>
+    <string name="total_balance">Całkowity balans:</string>
+    <string name="dialog_err
