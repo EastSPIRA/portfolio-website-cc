@@ -17,4 +17,7 @@
     <string name="dialog_error">Wybierz krypto i podaj ilość</string>
     <string name="enter_volume">Podaj ilość:</string>
     <string name="insert_volume_here">Ilość wpisz tu</string>
-    <string 
+    <string name="save">Zapisz</string>
+    <string name="cancel">Anuluj</string>
+    <string name="error_occurred">Problem z połąćzeniem :(</string>
+    <string name="price_change_al
