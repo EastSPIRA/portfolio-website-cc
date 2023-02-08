@@ -14,4 +14,7 @@
     <string name="coins">Coiny</string>
     <string name="dialog_title">Wybierz krypto i podaj ilość</string>
     <string name="total_balance">Całkowity balans:</string>
-    <string name="dialog_err
+    <string name="dialog_error">Wybierz krypto i podaj ilość</string>
+    <string name="enter_volume">Podaj ilość:</string>
+    <string name="insert_volume_here">Ilość wpisz tu</string>
+    <string 
