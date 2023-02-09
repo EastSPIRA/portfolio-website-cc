@@ -20,4 +20,6 @@
     <string name="save">Zapisz</string>
     <string name="cancel">Anuluj</string>
     <string name="error_occurred">Problem z połąćzeniem :(</string>
-    <string name="price_change_al
+    <string name="price_change_alert">Alarm cenowy</string>
+    <string name="bitcoin_price_alert">Bitcoin alarm cenowy</string>
+    <string name="notification">Powiadomienie o cenie
