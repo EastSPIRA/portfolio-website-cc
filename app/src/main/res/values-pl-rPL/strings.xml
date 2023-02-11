@@ -22,4 +22,6 @@
     <string name="error_occurred">Problem z połąćzeniem :(</string>
     <string name="price_change_alert">Alarm cenowy</string>
     <string name="bitcoin_price_alert">Bitcoin alarm cenowy</string>
-    <string name="notification">Powiadomienie o cenie
+    <string name="notification">Powiadomienie o cenie</string>
+    <string name="wallets">Portfele</string>
+    <string name="info_price_alert_too_small">Alarm musi być wyźszy o co njamniej $1000 niż akutalna cena</string>
