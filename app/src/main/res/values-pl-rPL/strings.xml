@@ -25,3 +25,6 @@
     <string name="notification">Powiadomienie o cenie</string>
     <string name="wallets">Portfele</string>
     <string name="info_price_alert_too_small">Alarm musi być wyźszy o co njamniej $1000 niż akutalna cena</string>
+    <string name="enter_price">Podaj cenę,  wyźszą o co njamniej $1000 niż akutalna cena</string>
+    <string name="current_price_alert">Akutalny alarm:</string>
+    <s
