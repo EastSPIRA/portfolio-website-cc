@@ -27,4 +27,6 @@
     <string name="info_price_alert_too_small">Alarm musi być wyźszy o co njamniej $1000 niż akutalna cena</string>
     <string name="enter_price">Podaj cenę,  wyźszą o co njamniej $1000 niż akutalna cena</string>
     <string name="current_price_alert">Akutalny alarm:</string>
-    <s
+    <string name="latest_bitcoin_price">Aktualna cena Bitcoina</string>
+    <string name="response_error">NIe można dostać danych. Spróbuj odświeżyć.</string>
+    <string name="
