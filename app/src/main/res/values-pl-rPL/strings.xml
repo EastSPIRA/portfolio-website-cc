@@ -29,4 +29,6 @@
     <string name="current_price_alert">Akutalny alarm:</string>
     <string name="latest_bitcoin_price">Aktualna cena Bitcoina</string>
     <string name="response_error">NIe można dostać danych. Spróbuj odświeżyć.</string>
-    <string name="
+    <string name="price_notification">Poniżej podaj cene, zostaniesz powiadomiony gdy Bitcoin ją przekroczy</string>
+    <string name="amountPrice"> Ilość / Cena</string>
+    <string nam
