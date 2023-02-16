@@ -31,4 +31,6 @@
     <string name="response_error">NIe można dostać danych. Spróbuj odświeżyć.</string>
     <string name="price_notification">Poniżej podaj cene, zostaniesz powiadomiony gdy Bitcoin ją przekroczy</string>
     <string name="amountPrice"> Ilość / Cena</string>
-    <string nam
+    <string name="something_wrong">Coś poszło nie tak, odśwież</string>
+    <string name="choose_coin">Wybierz krypto:</string>
+    <string name="settings">Ustawienia</str
