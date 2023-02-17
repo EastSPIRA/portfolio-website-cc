@@ -33,4 +33,8 @@
     <string name="amountPrice"> Ilość / Cena</string>
     <string name="something_wrong">Coś poszło nie tak, odśwież</string>
     <string name="choose_coin">Wybierz krypto:</string>
-    <string name="settings">Ustawienia</str
+    <string name="settings">Ustawienia</string>
+    <string name="app_name">Krypto</string>
+    <string name="language_entry">Polski</string>
+    <string name="language_value">PL</string>
+    <string name="language">
