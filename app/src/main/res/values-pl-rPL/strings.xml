@@ -37,4 +37,7 @@
     <string name="app_name">Krypto</string>
     <string name="language_entry">Polski</string>
     <string name="language_value">PL</string>
-    <string name="language">
+    <string name="language">Język</string>
+    <string name="light_theme">Jasny motyw</string>
+    <string name="dark_theme">Ciemny motyw</string>
+    <string name="follow_system">Zgodnie z syst
