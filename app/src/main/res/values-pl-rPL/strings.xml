@@ -45,4 +45,6 @@
     <string name="currency">Waluta</string>
     <string name="about">O aplikacji:</string>
     <string name="news">Krypto Niusy</string>
-    <string
+    <string name="wait_for_connection">Poczekaj na połączenie</string>
+    <string name="alert_hint">Podaj cene</string>
+    <string name="about_source">Kod żró
