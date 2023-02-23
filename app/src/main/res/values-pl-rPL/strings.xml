@@ -51,4 +51,7 @@
     <string name="about_data">Dane z www.coinmarketcap.com</string>
     <string name="about_news">Newsy z www.cointelegraph.com</string>
     <string name="clear_wallet">Usuń całe krypto</string>
-    <string name="clear_wallet_msg">To 
+    <string name="clear_wallet_msg">To spowoduje wyczyszczenie wszystkich portfeli.</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="done_by">Przygo
