@@ -49,4 +49,6 @@
     <string name="alert_hint">Podaj cene</string>
     <string name="about_source">Kod żródłowy:\n https://github.com/pawel-hn/CoinMarketApp</string>
     <string name="about_data">Dane z www.coinmarketcap.com</string>
-    <string name="about_news">N
+    <string name="about_news">Newsy z www.cointelegraph.com</string>
+    <string name="clear_wallet">Usuń całe krypto</string>
+    <string name="clear_wallet_msg">To 
