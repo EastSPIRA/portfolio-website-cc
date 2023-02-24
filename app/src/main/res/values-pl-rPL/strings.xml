@@ -54,4 +54,6 @@
     <string name="clear_wallet_msg">To spowoduje wyczyszczenie wszystkich portfeli.</string>
     <string name="yes">Tak</string>
     <string name="no">Nie</string>
-    <string name="done_by">Przygo
+    <string name="done_by">Przygotowane przez Paweł Hnacik</string>
+    <string name="currency_set">Waluta ustawiona na</string>
+</resources>
