@@ -6,4 +6,9 @@
         android:entries="@array/settings_language_entries"
         android:entryValues="@array/settings_language_values"
         android:icon="@drawable/ic_language"
- 
+        android:key="@string/settings_language_key"
+        android:title="@string/language"
+        app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+       
