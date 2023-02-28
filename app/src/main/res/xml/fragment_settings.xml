@@ -11,4 +11,7 @@
         app:useSimpleSummaryProvider="true"/>
 
     <ListPreference
-       
+        android:entries="@array/settings_themes"
+        android:entryValues="@array/settings_themes"
+        android:icon="@drawable/ic_dark_theme"
+        android:key="@strin
