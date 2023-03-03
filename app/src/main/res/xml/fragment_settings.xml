@@ -14,4 +14,9 @@
         android:entries="@array/settings_themes"
         android:entryValues="@array/settings_themes"
         android:icon="@drawable/ic_dark_theme"
-        android:key="@strin
+        android:key="@string/settings_theme_key"
+        android:title="@string/theme"
+        app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+        android:entries="@array/se
