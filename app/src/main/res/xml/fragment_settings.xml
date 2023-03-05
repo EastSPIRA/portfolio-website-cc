@@ -19,4 +19,7 @@
         app:useSimpleSummaryProvider="true"/>
 
     <ListPreference
-        android:entries="@array/se
+        android:entries="@array/settings_currency"
+        android:entryValues="@array/settings_currency"
+        android:icon="@drawable/ic_dollar"
+        android:key="@string/settings_currency_
