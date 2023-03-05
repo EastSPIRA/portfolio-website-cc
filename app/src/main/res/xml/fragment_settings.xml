@@ -22,4 +22,11 @@
         android:entries="@array/settings_currency"
         android:entryValues="@array/settings_currency"
         android:icon="@drawable/ic_dollar"
-        android:key="@string/settings_currency_
+        android:key="@string/settings_currency_key"
+        android:title="@string/currency"
+        app:useSimpleSummaryProvider="true"
+        />
+
+
+
+</PreferenceScreen>
