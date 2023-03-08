@@ -6,3 +6,5 @@
     android:minResizeWidth="360dp"
     android:minResizeHeight="40dp"
     android:updatePeriodMillis="3600000"
+    />
+
