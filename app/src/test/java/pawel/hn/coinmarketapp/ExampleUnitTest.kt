@@ -12,3 +12,12 @@ import org.junit.Test
 
 
 class ExampleUnitTest {
+
+    @Test
+    fun addition_isCorrect() {
+        val x = 4
+        assertThat(x).isEqualTo(2+2)
+    }
+    
+
+}
