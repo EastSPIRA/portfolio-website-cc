@@ -27,4 +27,10 @@ fun <T> LiveData<T>.getOrAwaitValue(
             latch.countDown()
             this@getOrAwaitValue.removeObserver(this)
         }
- 
+    }
+    this.observeForever(observer)
+
+    try {
+        afterObserve.invoke()
+
+        // Don't wait indefinitely if the LiveData is not set.
