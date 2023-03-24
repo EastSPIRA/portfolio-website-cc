@@ -12,4 +12,10 @@ buildscript {
                 includeModule("com.toptoche.searchablespinner", "searchablespinnerlibrary")
             }
         }
-        
+        mavenCentral()
+        maven ( url ="https://jitpack.io" )
+
+    }
+    dependencies {
+        classpath ("com.android.tools.build:gradle:4.2.1")
+    
