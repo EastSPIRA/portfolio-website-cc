@@ -8,4 +8,8 @@ buildscript {
         jcenter(){
             content {
                 includeModule("com.todkars", "shimmer-recyclerview")
-                in
+                includeModule("com.facebook.shimmer", "shimmer")
+                includeModule("com.toptoche.searchablespinner", "searchablespinnerlibrary")
+            }
+        }
+        
