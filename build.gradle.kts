@@ -21,4 +21,6 @@ buildscript {
         classpath ("org.jetbrains.kotlin:kotlin-gradle-plugin:${DependenciesVersions.kotlinVersion}")
 
 
-        classpath ("androidx.navigation:navigation-safe-args-
+        classpath ("androidx.navigation:navigation-safe-args-gradle-plugin:${DependenciesVersions.navigationComponentVersion}")
+
+        classpath ("com.google.dagger:hilt-android-gradle-plugin:${DependenciesVersions.hiltVe
