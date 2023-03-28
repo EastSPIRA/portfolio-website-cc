@@ -30,4 +30,9 @@ buildscript {
 }
 
 allprojects {
-    re
+    repositories {
+        google()
+        jcenter(){
+            content {
+                includeModule("com.todkars", "shimmer-recyclerview")
+                includeMo
