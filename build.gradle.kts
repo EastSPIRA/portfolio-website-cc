@@ -39,4 +39,11 @@ allprojects {
                 includeModule("com.toptoche.searchablespinner", "searchablespinnerlibrary")
             }
         }
-        mavenCent
+        mavenCentral()
+        maven ( url = "https://jitpack.io")
+    }
+}
+
+tasks.create<Delete>("clean") {
+    delete = setOf(rootProject.buildDir)
+}
