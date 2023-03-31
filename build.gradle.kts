@@ -35,4 +35,8 @@ allprojects {
         jcenter(){
             content {
                 includeModule("com.todkars", "shimmer-recyclerview")
-                includeMo
+                includeModule("com.facebook.shimmer", "shimmer")
+                includeModule("com.toptoche.searchablespinner", "searchablespinnerlibrary")
+            }
+        }
+        mavenCent
