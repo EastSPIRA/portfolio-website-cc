@@ -6,4 +6,5 @@ object Dependencies {
     const val googleMaterial = "com.google.android.material:material:${DependenciesVersions.googleMaterialVersion}"
     const val constraintLayout =  "androidx.constraintlayout:constraintlayout:${DependenciesVersions.constraintLayoutVersion}"
     const val swipeToRefresh = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
-    const val navi
+    const val navigationFragmentKtx =  "androidx.navigation:navigation-fragment-ktx:${DependenciesVersions.navigationComponentVersion}"
+    const val navigationUiKtx = "androidx.navigation:naviga
