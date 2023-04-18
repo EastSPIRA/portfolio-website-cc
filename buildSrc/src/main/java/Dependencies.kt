@@ -7,4 +7,5 @@ object Dependencies {
     const val constraintLayout =  "androidx.constraintlayout:constraintlayout:${DependenciesVersions.constraintLayoutVersion}"
     const val swipeToRefresh = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     const val navigationFragmentKtx =  "androidx.navigation:navigation-fragment-ktx:${DependenciesVersions.navigationComponentVersion}"
-    const val navigationUiKtx = "androidx.navigation:naviga
+    const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${DependenciesVersions.navigationComponentVersion}"
+    const val retrofit = "com.squareup.retrofit2:retrofit:${DependenciesVersions.retrofitVe
