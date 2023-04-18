@@ -8,4 +8,6 @@ object Dependencies {
     const val swipeToRefresh = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     const val navigationFragmentKtx =  "androidx.navigation:navigation-fragment-ktx:${DependenciesVersions.navigationComponentVersion}"
     const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${DependenciesVersions.navigationComponentVersion}"
-    const val retrofit = "com.squareup.retrofit2:retrofit:${DependenciesVersions.retrofitVe
+    const val retrofit = "com.squareup.retrofit2:retrofit:${DependenciesVersions.retrofitVersion}"
+    const val retrofitGsonConverter ="com.squareup.retrofit2:converter-gson:${DependenciesVersions.retrofitVersion}"
+    const val roomCore = "androidx
