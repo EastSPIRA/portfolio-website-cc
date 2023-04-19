@@ -10,4 +10,5 @@ object Dependencies {
     const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${DependenciesVersions.navigationComponentVersion}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${DependenciesVersions.retrofitVersion}"
     const val retrofitGsonConverter ="com.squareup.retrofit2:converter-gson:${DependenciesVersions.retrofitVersion}"
-    const val roomCore = "androidx
+    const val roomCore = "androidx.room:room-runtime:${DependenciesVersions.roomVersion}"
+    const val roomKapt = "androidx.room:room-compiler:${DependenciesVersions.roomVersion}
