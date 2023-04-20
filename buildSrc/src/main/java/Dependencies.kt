@@ -11,4 +11,6 @@ object Dependencies {
     const val retrofit = "com.squareup.retrofit2:retrofit:${DependenciesVersions.retrofitVersion}"
     const val retrofitGsonConverter ="com.squareup.retrofit2:converter-gson:${DependenciesVersions.retrofitVersion}"
     const val roomCore = "androidx.room:room-runtime:${DependenciesVersions.roomVersion}"
-    const val roomKapt = "androidx.room:room-compiler:${DependenciesVersions.roomVersion}
+    const val roomKapt = "androidx.room:room-compiler:${DependenciesVersions.roomVersion}"
+    const val roomKtx =  "androidx.room:room-ktx:${DependenciesVersions.roomVersion}"
+    const val liveData = "androidx.lifecycle:lifecycle-live
