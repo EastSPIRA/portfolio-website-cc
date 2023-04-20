@@ -13,4 +13,6 @@ object Dependencies {
     const val roomCore = "androidx.room:room-runtime:${DependenciesVersions.roomVersion}"
     const val roomKapt = "androidx.room:room-compiler:${DependenciesVersions.roomVersion}"
     const val roomKtx =  "androidx.room:room-ktx:${DependenciesVersions.roomVersion}"
-    const val liveData = "androidx.lifecycle:lifecycle-live
+    const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
+    const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${DependenciesVersions.coroutinesVersion}"
+    const val 
