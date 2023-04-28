@@ -15,4 +15,5 @@ object Dependencies {
     const val roomKtx =  "androidx.room:room-ktx:${DependenciesVersions.roomVersion}"
     const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${DependenciesVersions.coroutinesVersion}"
-    const val 
+    const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${DependenciesVersions.coroutinesVersion}"
+    const val hiltCore = "com.google.dagger:hilt-android:${Dependencie
