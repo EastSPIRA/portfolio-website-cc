@@ -18,4 +18,5 @@ object Dependencies {
     const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${DependenciesVersions.coroutinesVersion}"
     const val hiltCore = "com.google.dagger:hilt-android:${DependenciesVersions.hiltVersion}"
     const val hiltKapt = "com.google.dagger:hilt-android-compiler:${DependenciesVersions.hiltVersion}"
-    const val coroutinesTest = "org.jetbrains.
+    const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${DependenciesVersions.coroutinesVersion}"
+    const val junitTest = "androidx.test.ext:junit:${DependenciesVersions.junitTestVer
