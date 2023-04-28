@@ -16,4 +16,6 @@ object Dependencies {
     const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${DependenciesVersions.coroutinesVersion}"
     const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${DependenciesVersions.coroutinesVersion}"
-    const val hiltCore = "com.google.dagger:hilt-android:${Dependencie
+    const val hiltCore = "com.google.dagger:hilt-android:${DependenciesVersions.hiltVersion}"
+    const val hiltKapt = "com.google.dagger:hilt-android-compiler:${DependenciesVersions.hiltVersion}"
+    const val coroutinesTest = "org.jetbrains.
