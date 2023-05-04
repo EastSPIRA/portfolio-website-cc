@@ -21,4 +21,7 @@ object Dependencies {
     const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${DependenciesVersions.coroutinesVersion}"
     const val junitTest = "androidx.test.ext:junit:${DependenciesVersions.junitTestVersion}"
     const val espressoCore = "androidx.test.espresso:espresso-core:${DependenciesVersions.espressoVersion}"
-    const val googleTruth =  "com.googl
+    const val googleTruth =  "com.google.truth:truth:1.1.2"
+    const val coreTesting = "androidx.arch.core:core-testing:2.1.0"
+    const val mockk = "io.mockk:mockk:${DependenciesVersions.mockkVersion}"
+    const v
