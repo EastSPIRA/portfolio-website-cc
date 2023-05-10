@@ -24,4 +24,5 @@ object Dependencies {
     const val googleTruth =  "com.google.truth:truth:1.1.2"
     const val coreTesting = "androidx.arch.core:core-testing:2.1.0"
     const val mockk = "io.mockk:mockk:${DependenciesVersions.mockkVersion}"
-    const v
+    const val workManagerTesting = "androidx.work:work-testing:2.5.0"
+    const val workManager = "androidx.work:work-runtime-ktx:${DependenciesVersions.work
