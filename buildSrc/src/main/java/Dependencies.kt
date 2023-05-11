@@ -27,4 +27,6 @@ object Dependencies {
     const val workManagerTesting = "androidx.work:work-testing:2.5.0"
     const val workManager = "androidx.work:work-runtime-ktx:${DependenciesVersions.workManagerVersion}"
     const val hiltWorkManager = "androidx.hilt:hilt-work:1.0.0-beta01"
-    const val hiltKaptAndroidx = "androidx.hilt:hilt-compiler:1.0.0-b
+    const val hiltKaptAndroidx = "androidx.hilt:hilt-compiler:1.0.0-beta01"
+    const val settings =  "androidx.preference:preference-ktx:${DependenciesVersions.settingsVersion}"
+    const val charts = "com.github.PhilJay:MPAndroidChart:v${Depend
