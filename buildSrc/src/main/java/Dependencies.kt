@@ -25,4 +25,6 @@ object Dependencies {
     const val coreTesting = "androidx.arch.core:core-testing:2.1.0"
     const val mockk = "io.mockk:mockk:${DependenciesVersions.mockkVersion}"
     const val workManagerTesting = "androidx.work:work-testing:2.5.0"
-    const val workManager = "androidx.work:work-runtime-ktx:${DependenciesVersions.work
+    const val workManager = "androidx.work:work-runtime-ktx:${DependenciesVersions.workManagerVersion}"
+    const val hiltWorkManager = "androidx.hilt:hilt-work:1.0.0-beta01"
+    const val hiltKaptAndroidx = "androidx.hilt:hilt-compiler:1.0.0-b
