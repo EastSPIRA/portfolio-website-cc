@@ -31,4 +31,6 @@ object Dependencies {
     const val settings =  "androidx.preference:preference-ktx:${DependenciesVersions.settingsVersion}"
     const val charts = "com.github.PhilJay:MPAndroidChart:v${DependenciesVersions.chartsVersion}"
     const val rssParser = "com.prof18.rssparser:rssparser:${DependenciesVersions.rssParserVersion}"
-    const val shimmer = "com.faceboo
+    const val shimmer = "com.facebook.shimmer:shimmer:${DependenciesVersions.shimmmerVersion}"
+    const val shimmerRecyclerView = "com.todkars:shimmer-recyclerview:0.4.0"
+    const val searchableSpi
