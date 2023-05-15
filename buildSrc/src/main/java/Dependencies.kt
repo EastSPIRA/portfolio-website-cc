@@ -29,4 +29,6 @@ object Dependencies {
     const val hiltWorkManager = "androidx.hilt:hilt-work:1.0.0-beta01"
     const val hiltKaptAndroidx = "androidx.hilt:hilt-compiler:1.0.0-beta01"
     const val settings =  "androidx.preference:preference-ktx:${DependenciesVersions.settingsVersion}"
-    const val charts = "com.github.PhilJay:MPAndroidChart:v${Depend
+    const val charts = "com.github.PhilJay:MPAndroidChart:v${DependenciesVersions.chartsVersion}"
+    const val rssParser = "com.prof18.rssparser:rssparser:${DependenciesVersions.rssParserVersion}"
+    const val shimmer = "com.faceboo
