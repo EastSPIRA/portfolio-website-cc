@@ -33,4 +33,5 @@ object Dependencies {
     const val rssParser = "com.prof18.rssparser:rssparser:${DependenciesVersions.rssParserVersion}"
     const val shimmer = "com.facebook.shimmer:shimmer:${DependenciesVersions.shimmmerVersion}"
     const val shimmerRecyclerView = "com.todkars:shimmer-recyclerview:0.4.0"
-    const val searchableSpi
+    const val searchableSpinner = "com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1"
+    const val glideCore = "com.github.bumptech.glide:glide:${Depend
