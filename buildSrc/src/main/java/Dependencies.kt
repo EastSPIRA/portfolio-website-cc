@@ -34,4 +34,7 @@ object Dependencies {
     const val shimmer = "com.facebook.shimmer:shimmer:${DependenciesVersions.shimmmerVersion}"
     const val shimmerRecyclerView = "com.todkars:shimmer-recyclerview:0.4.0"
     const val searchableSpinner = "com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1"
-    const val glideCore = "com.github.bumptech.glide:glide:${Depend
+    const val glideCore = "com.github.bumptech.glide:glide:${DependenciesVersions.glideVersion}"
+    const val glideKapt = "com.github.bumptech.glide:compiler:${DependenciesVersions.glideVersion}"
+
+}
