@@ -19,3 +19,5 @@ object DependenciesVersions {
     const val shimmmerVersion = "0.5.0"
     const val junitTestVersion = "1.1.3"
     const val espressoVersion = "3.3.0"
+    const val mockkVersion = "1.10.6"
+}
